@@ -1,0 +1,1542 @@
+.mediaViewInfo {
+  --web-view-name: TWINSHIPS;
+  --web-view-id: container;
+  --web-scale-on-resize: true;
+  --web-enable-deep-linking: true;
+}
+:root {
+  --web-view-ids: container;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+#container {
+  position: absolute;
+  width: 412px;
+  height: 870px;
+  background-color: rgba(255,255,255,1);
+  overflow: hidden;
+  --web-view-name: Welcome;
+	--web-view-id: container;
+  --web-scale-on-resize: true;
+  --web-enable-deep-linking: true;
+}
+@keyframes fadein {
+  
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }  
+}
+a { color: #00B7FF;}
+#WELCOME_TWINSHIPS {
+  left: 97px;
+  top: 104px;
+  position: absolute;
+  overflow: visible;
+  width: 233px;
+  white-space: nowrap;
+  line-height: 32px;
+  margin-top: -5.5px;
+  text-align: left;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  color: rgba(38,153,251,1);
+}
+#n____________NEXT____ {
+  left: 62px;
+  top: 522px;
+  position: absolute;
+  overflow: visible;
+  width: 311px;
+  height: 93px;
+  line-height: 24px;
+  margin-top: -5px;
+  text-align: center;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(38,153,251,1);
+}
+#n_1468 {
+  position: absolute;
+  width: 412px;
+  height: 870px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+.sidenav {
+  position: fixed;
+  width: 0;
+  height: 100%;
+  left: 0;
+  top: 60px;
+  overflow-x: hidden;
+  transition: 0.5s;
+  /* overflow: visible; */
+}
+#n_175 {
+  fill: transparent;
+}
+.n_175 {
+  position: absolute;
+  overflow: visible;
+  width: 16px;
+  height: 16px;
+  left: 0px;
+  top: 0px;
+}
+#n_4 {
+  fill: rgba(38,153,251,1);
+}
+.n_4 {
+  overflow: visible;
+  position: absolute;
+  width: 16px;
+  height: 14px;
+  left: 0px;
+  top: 1px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Next {
+  position: absolute;
+  width: 332px;
+  height: 53px;
+  left: 40px;
+  top: 700px;
+  overflow: visible;
+}
+#n_112 {
+  fill: rgba(38,153,251,1);
+}
+.n_112 {
+  position: absolute;
+  overflow: visible;
+  width: 332px;
+  height: 53px;
+  left: 0px;
+  top: 0px;
+}
+#btn_agree {
+  left: 62px;
+  top: 712px;
+  position: absolute;
+  overflow: visible;
+  width: 303px;
+  height: 29px;
+  --web-animation: fadein 0.3s ease-out;
+  --web-action-type: page;
+  --web-action-target: Sign_up_.html;
+  cursor: pointer;
+  line-height: 20px;
+  margin-top: -2px;
+  text-align: left;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: rgba(255,255,255,1);
+}
+#logo_1 {
+  position: absolute;
+  width: 353.004px;
+  height: 107.34px;
+  left: 29.498px;
+  top: 70px;
+  overflow: visible;
+}
+#Login {
+  position: absolute;
+  width: 412px;
+  height: 870px;
+  background-color: rgba(255,255,255,1);
+  overflow: hidden;
+  --web-view-name: Login;
+  --web-view-id: Login;
+  --web-scale-on-resize: true;
+  --web-enable-deep-linking: true;
+}
+@keyframes fadein {
+
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+
+}
+#Next {
+  position: absolute;
+  width: 332px;
+  height: 53px;
+  left: 40px;
+  top: 700px;
+  overflow: visible;
+}
+#n_112 {
+  fill: rgba(38,153,251,1);
+}
+.n_112 {
+  position: absolute;
+  overflow: visible;
+  width: 331px;
+  height: 54px;
+  left: 0px;
+  top: 0px;
+}
+#n_ {
+  position: absolute;
+  width: 18px;
+  height: 17px;
+  left: 157px;
+  top: 18.947px;
+  overflow: visible;
+}
+#n_10 {
+  fill: rgba(255,255,255,1);
+}
+.n_10 {
+  overflow: visible;
+  position: absolute;
+  width: 17.578px;
+  height: 17.578px;
+  left: 0px;
+  top: 0px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#n__x {
+  left: 40px;
+  top: 100px;
+  position: absolute;
+  overflow: visible;
+  width: 112px;
+  white-space: nowrap;
+  line-height: 32px;
+  margin-top: -5.5px;
+  text-align: left;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  color: rgba(38,153,251,1);
+}
+.Continue {
+  position: absolute;
+  width: 295px;
+  height: 30px;
+  left: 59px;
+  top: 712px;
+  overflow: visible;
+  --web-animation: fadein 0.3s ease-out;
+  --web-action-type: page;
+  --web-action-target: Welcome.html;
+  cursor: pointer;
+}
+#n_132 {
+  fill: rgba(38,153,251,1);
+}
+.n_132 {
+  position: absolute;
+  overflow: visible;
+  width: 295px;
+  height: 30px;
+  left: 0px;
+  top: 0px;
+}
+#Text {
+  left: 120px;
+  top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 55px;
+  white-space: nowrap;
+  text-align: center;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  color: rgba(255,255,255,1);
+}
+#Inputs {
+  position: absolute;
+  width: 298px;
+  left: 57px;
+  top: 298px;
+  overflow: hidden;
+}
+#inputs {
+  position: absolute;
+  width: 295px;
+  height: 48px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+#n_123 {
+  fill: rgba(255,255,255,1);
+  stroke: rgba(188,224,253,1);
+  stroke-width: 2px;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.n_123 {
+  position: absolute;
+  overflow: visible;
+  width: 295px;
+  height: 48px;
+  left: 0px;
+  top: 0px;
+}
+#Parkjang_mailcom {
+  left: 25px;
+  top: 16px;
+  position: absolute;
+  overflow: visible;
+  width: 130px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(38,153,251,1);
+}
+#inputs_ {
+  position: absolute;
+  width: 295px;
+  height: 48px;
+  left: 0px;
+  top: 72px;
+  overflow: visible;
+}
+#n_123_ {
+  fill: rgba(255,255,255,1);
+  stroke: rgba(188,224,253,1);
+  stroke-width: 2px;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.n_123_ {
+  position: absolute;
+  overflow: visible;
+  width: 295px;
+  height: 48px;
+  left: 0px;
+  top: 0px;
+}
+#Text_ {
+  left: 25px;
+  top: 16px;
+  position: absolute;
+  overflow: visible;
+  width: 60px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(38,153,251,1);
+}
+#Navigation_Bar {
+  position: absolute;
+  width: 332px;
+  height: 68px;
+  left: 40px;
+  top: 0px;
+  overflow: visible;
+}
+#n_68 {
+  fill: transparent;
+}
+.n_68 {
+  position: absolute;
+  overflow: visible;
+  width: 332px;
+  height: 20px;
+  left: 0px;
+  top: 0px;
+}
+#n_69 {
+  fill: transparent;
+}
+.n_69 {
+  position: absolute;
+  overflow: visible;
+  width: 332px;
+  height: 48px;
+  left: 0px;
+  top: 20px;
+}
+#Backward_arrow {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 0px;
+  top: 35px;
+  overflow: visible;
+  --web-animation: fadein 0.3s ease-out;
+  --web-action-type: page;
+  --web-action-target: Sign_up_.html;
+  cursor: pointer;
+}
+#n_10_bc {
+  fill: rgba(38,153,251,1);
+}
+.n_10_bc {
+  overflow: visible;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  transform: translate(0px, 0px) matrix(1,0,0,1,0,0) rotate(180deg);
+  transform-origin: center;
+  left: 0px;
+  top: 0px;
+}
+#logo_1-1 {
+  position: absolute;
+  width: 152.973px;
+  height: 46.67px;
+  left: 89.514px;
+  top: 19.664px;
+  overflow: visible;
+}
+.form-control {
+  border-color:rgba(188,224,253,1);
+  border-radius: 20px;
+}
+.form-control::placeholder {
+  color: rgba(38, 152, 251, 0.775);
+}
+#Menu_ {
+  position: absolute;
+  width: 412px;
+  height: 870px;
+  background-color: rgba(255,255,255,1);
+  overflow: hidden;
+  --web-view-name: Menu ;
+  --web-view-id: Menu_;
+  --web-scale-on-resize: true;
+  --web-enable-deep-linking: true;
+}
+#tabs {
+  position: absolute;
+  width: 61px;
+  height: 253px;
+  left: 0px;
+  top: 123px;
+  overflow: visible;
+}
+#n_172 {
+  fill: rgba(38,153,251,1);
+}
+.n_172 {
+  position: absolute;
+  overflow: visible;
+  width: 61px;
+  height: 61px;
+  left: 0px;
+  top: 0px;
+}
+#n__2 {
+  position: absolute;
+  width: 17px;
+  height: 18px;
+  left: 22px;
+  top: 131px;
+  overflow: visible;
+}
+#n_103 {
+  fill: rgba(255,255,255,1);
+}
+.n_103 {
+  overflow: visible;
+  position: absolute;
+  width: 17.578px;
+  height: 17.578px;
+  left: 0px;
+  top: 0px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#n__2_y {
+  position: absolute;
+  width: 17px;
+  height: 18px;
+  left: 22px;
+  top: 22px;
+  overflow: visible;
+}
+#n_102 {
+  fill: rgba(255,255,255,1);
+}
+.n_102 {
+  overflow: visible;
+  position: absolute;
+  width: 17.578px;
+  height: 17.578px;
+  left: 0px;
+  top: 0px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#n__3 {
+  position: absolute;
+  width: 17px;
+  height: 18px;
+  left: 22px;
+  top: 235px;
+  overflow: visible;
+}
+#n_1 {
+  fill: rgba(255,255,255,1);
+}
+.n_1 {
+  overflow: visible;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 0px;
+  top: 0px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Menu_ba {
+  position: absolute;
+  width: 289px;
+  height: 733px;
+  /* left: 83px; */
+  top: 0px;
+  overflow: visible;
+}
+#n_581 {
+  fill: rgba(38,153,251,1);
+}
+.n_581 {
+  position: absolute;
+  overflow: visible;
+  width: 289px;
+  height: 733px;
+  left: 0px;
+  top: 0px;
+}
+#profile {
+  position: absolute;
+  width: 372px;
+  height: 88px;
+  left: 0px;
+  top: 645px;
+  overflow: visible;
+  --web-animation: fadein 0.3s ease-out;
+  --web-action-type: page;
+  --web-action-target: Personal_.html;
+  cursor: pointer;
+}
+#n_582 {
+  fill: rgba(255,255,255,1);
+}
+.n_582 {
+  position: absolute;
+  overflow: visible;
+  width: 372px;
+  height: 88px;
+  left: 0px;
+  top: 0px;
+}
+#Name {
+  position: absolute;
+  width: 66px;
+  height: 35px;
+  left: 100px;
+  top: 25px;
+  overflow: visible;
+}
+#Text {
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 46px;
+  white-space: nowrap;
+  line-height: 26px;
+  margin-top: -5.5px;
+  text-align: left;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  color: rgba(38,153,251,1);
+}
+#n__ {
+  left: 0px;
+  top: 22px;
+  position: absolute;
+  overflow: visible;
+  width: 67px;
+  white-space: nowrap;
+  line-height: 24px;
+  margin-top: -7px;
+  text-align: left;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  color: rgba(38,153,251,1);
+}
+#profile_photo {
+  position: absolute;
+  width: 52px;
+  height: 52px;
+  left: 40px;
+  top: 17px;
+  overflow: visible;
+}
+#n_96 {
+  fill: rgba(241,249,255,1);
+}
+.n_96 {
+  position: absolute;
+  overflow: visible;
+  width: 52px;
+  height: 52px;
+  left: 0px;
+  top: 0px;
+}
+#n__4 {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 17px;
+  top: 18px;
+  overflow: visible;
+}
+#n_1_bc {
+  fill: rgba(38,153,251,1);
+}
+.n_1_bc {
+  overflow: visible;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 0px;
+  top: 0px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Logout {
+  position: absolute;
+  width: 17px;
+  height: 18px;
+  left: 314px;
+  top: 35px;
+  overflow: visible;
+}
+#n_570 {
+  fill: transparent;
+}
+.n_570 {
+  position: absolute;
+  overflow: visible;
+  width: 18px;
+  height: 18px;
+  left: 0px;
+  top: 0px;
+}
+#n_151 {
+  fill: rgba(38,153,251,1);
+}
+.n_151 {
+  overflow: visible;
+  position: absolute;
+  width: 15.355px;
+  height: 17.578px;
+  left: 2.197px;
+  top: 0px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#n__bg {
+  position: absolute;
+  width: 148px;
+  height: 343px;
+  left: 160px;
+  top: 115px;
+  overflow: visible;
+}
+#n_Btn {
+  position: absolute;
+  width: 148px;
+  height: 48px;
+  left: 0px;
+  top: 59px;
+  overflow: visible;
+  --web-animation: fadein 0.3s ease-out;
+  --web-action-type: page;
+  --web-action-target: Welcome.html;
+  cursor: pointer;
+}
+#n_1090 {
+  fill: rgba(38,153,251,1);
+}
+.n_1090 {
+  position: absolute;
+  overflow: visible;
+  width: 148px;
+  height: 48px;
+  left: 0px;
+  top: 0px;
+}
+#Text_bj {
+  left: 38px;
+  top: 12px;
+  position: absolute;
+  overflow: visible;
+  width: 73px;
+  white-space: nowrap;
+  line-height: 30px;
+  margin-top: -6px;
+  text-align: center;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  color: rgba(255,255,255,1);
+}
+#n_Btn_bk {
+  position: absolute;
+  width: 148px;
+  height: 48px;
+  left: 0px;
+  top: 118px;
+  overflow: visible;
+  --web-animation: fadein 0.3s ease-out;
+  --web-action-type: page;
+  --web-action-target: Photo_work_.html;
+  cursor: pointer;
+}
+#n_1090_bl {
+  fill: rgba(38,153,251,1);
+}
+.n_1090_bl {
+  position: absolute;
+  overflow: visible;
+  width: 148px;
+  height: 48px;
+  left: 0px;
+  top: 0px;
+}
+#Text_bm {
+  left: 38px;
+  top: 12px;
+  position: absolute;
+  overflow: visible;
+  width: 73px;
+  white-space: nowrap;
+  line-height: 30px;
+  margin-top: -6px;
+  text-align: center;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  color: rgba(255,255,255,1);
+}
+#n_Btn_bn {
+  position: absolute;
+  width: 148px;
+  height: 48px;
+  left: 0px;
+  top: 177px;
+  overflow: visible;
+  --web-animation: fadein 0.3s ease-out;
+  --web-action-type: page;
+  --web-action-target: Personal_.html;
+  cursor: pointer;
+}
+#n_1090_bo {
+  fill: rgba(38,153,251,1);
+}
+.n_1090_bo {
+  position: absolute;
+  overflow: visible;
+  width: 148px;
+  height: 48px;
+  left: 0px;
+  top: 0px;
+}
+#Text_bp {
+  left: 47px;
+  top: 12px;
+  position: absolute;
+  overflow: visible;
+  width: 55px;
+  white-space: nowrap;
+  line-height: 30px;
+  margin-top: -6px;
+  text-align: center;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  color: rgba(255,255,255,1);
+}
+#n_Btn_bq {
+  position: absolute;
+  width: 148px;
+  height: 48px;
+  left: 0px;
+  top: 236px;
+  overflow: visible;
+  --web-animation: fadein 0.3s ease-out;
+  --web-action-type: page;
+  --web-action-target: Photo_work_confirm.html;
+  cursor: pointer;
+}
+#n_1090_br {
+  fill: rgba(38,153,251,1);
+}
+.n_1090_br {
+  position: absolute;
+  overflow: visible;
+  width: 148px;
+  height: 48px;
+  left: 0px;
+  top: 0px;
+}
+#Text_bs {
+  left: 29px;
+  top: 12px;
+  position: absolute;
+  overflow: visible;
+  width: 91px;
+  white-space: nowrap;
+  line-height: 30px;
+  margin-top: -6px;
+  text-align: center;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  color: rgba(255,255,255,1);
+}
+#n_Btn_bt {
+  position: absolute;
+  width: 148px;
+  height: 48px;
+  left: 0px;
+  top: 295px;
+  overflow: visible;
+  --web-animation: fadein 0.3s ease-out;
+  --web-action-type: page;
+  --web-action-target: Payment.html;
+  cursor: pointer;
+}
+#n_1090_bu {
+  fill: rgba(38,153,251,1);
+}
+.n_1090_bu {
+  position: absolute;
+  overflow: visible;
+  width: 148px;
+  height: 48px;
+  left: 0px;
+  top: 0px;
+}
+#Text_bv {
+  left: 38px;
+  top: 12px;
+  position: absolute;
+  overflow: visible;
+  width: 73px;
+  white-space: nowrap;
+  line-height: 30px;
+  margin-top: -6px;
+  text-align: center;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  color: rgba(255,255,255,1);
+}
+#n_Btn_bw {
+  position: absolute;
+  width: 148px;
+  height: 48px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+  --web-animation: fadein 0.3s ease-out;
+  --web-action-type: page;
+  --web-action-target: Gallary_page.html;
+  cursor: pointer;
+}
+#n_1090_bx {
+  fill: rgba(38,153,251,1);
+}
+.n_1090_bx {
+  position: absolute;
+  overflow: visible;
+  width: 148px;
+  height: 48px;
+  left: 0px;
+  top: 0px;
+}
+#HOME {
+  left: 47px;
+  top: 14px;
+  position: absolute;
+  overflow: visible;
+  width: 55px;
+  white-space: nowrap;
+  line-height: 30px;
+  margin-top: -6px;
+  text-align: center;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  color: rgba(255,255,255,1);
+}
+#n__bz {
+  position: absolute;
+  width: 32.477px;
+  height: 326.648px;
+  left: 128px;
+  top: 123px;
+  overflow: visible;
+}
+#Icon_awesome-photo-video {
+  fill: rgba(255,255,255,1);
+}
+.Icon_awesome-photo-video {
+  overflow: visible;
+  position: absolute;
+  width: 29.25px;
+  height: 24.367px;
+  left: 0.902px;
+  top: 120.248px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Icon_material-payment {
+  fill: rgba(255,255,255,1);
+}
+.Icon_material-payment {
+  overflow: visible;
+  position: absolute;
+  width: 30px;
+  height: 24px;
+  left: 2.477px;
+  top: 302.648px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Icon_material-contact-mail {
+  fill: rgba(255,255,255,1);
+}
+.Icon_material-contact-mail {
+  overflow: visible;
+  position: absolute;
+  width: 27.271px;
+  height: 21.324px;
+  left: 1.189px;
+  top: 178.953px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Icon_awesome-file-upload {
+  fill: rgba(255,255,255,1);
+}
+.Icon_awesome-file-upload {
+  overflow: visible;
+  position: absolute;
+  width: 27px;
+  height: 36px;
+  left: 3.566px;
+  top: 232.615px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Icon_ionic-md-help-circle-outl {
+  position: absolute;
+  width: 29.25px;
+  height: 29.25px;
+  left: 0.008px;
+  top: 56.965px;
+  overflow: visible;
+}
+#n_29 {
+  position: absolute;
+  width: 11.7px;
+  height: 17.578px;
+  left: 8.773px;
+  top: 5.836px;
+  overflow: visible;
+}
+#n_238 {
+  fill: rgba(255,255,255,1);
+}
+.n_238 {
+  overflow: visible;
+  position: absolute;
+  width: 2.953px;
+  height: 2.953px;
+  left: 4.375px;
+  top: 14.625px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#n_239 {
+  fill: rgba(255,255,255,1);
+}
+.n_239 {
+  overflow: visible;
+  position: absolute;
+  width: 11.699px;
+  height: 13.148px;
+  left: 0.002px;
+  top: 0px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#n_237 {
+  fill: rgba(255,255,255,1);
+}
+.n_237 {
+  overflow: visible;
+  position: absolute;
+  width: 29.25px;
+  height: 29.25px;
+  left: 0px;
+  top: 0px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Icon_awesome-home {
+  fill: rgba(255,255,255,1);
+}
+.Icon_awesome-home {
+  overflow: visible;
+  position: absolute;
+  width: 29.488px;
+  height: 22.93px;
+  left: -0.002px;
+  top: 0px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Navigation_Bar {
+  position: absolute;
+  width: 332px;
+  height: 68px;
+  left: 40px;
+  top: 0px;
+  overflow: visible;
+}
+#n_68 {
+  fill: transparent;
+}
+.n_68 {
+  position: absolute;
+  overflow: visible;
+  width: 332px;
+  height: 20px;
+  left: 0px;
+  top: 0px;
+}
+#n_69 {
+  fill: transparent;
+}
+.n_69 {
+  position: absolute;
+  overflow: visible;
+  width: 332px;
+  height: 48px;
+  left: 0px;
+  top: 20px;
+}
+#n__1 {
+  left: 97px;
+  top: 100px;
+  position: absolute;
+  overflow: visible;
+  width: 129px;
+  white-space: nowrap;
+  line-height: 32px;
+  margin-top: -5.5px;
+  text-align: left;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  color: rgba(38,153,251,1);
+}
+#n____________NEXT____bc {
+  left: 62px;
+  top: 522px;
+  position: absolute;
+  overflow: visible;
+  width: 311px;
+  height: 93px;
+  line-height: 24px;
+  margin-top: -5px;
+  text-align: center;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(38,153,251,1);
+}
+#n_584 {
+  position: absolute;
+  width: 332px;
+  height: 16px;
+  left: 40px;
+  top: 700px;
+  overflow: visible;
+}
+#NEXT {
+  left: 295px;
+  top: 0px;
+  position: absolute;
+  overflow: visible;
+  cursor: pointer;
+  width: 38px;
+  white-space: nowrap;
+  text-align: right;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  color: rgba(38,153,251,1);
+}
+#Pagination {
+  position: absolute;
+  width: 54px;
+  height: 6px;
+  left: 150px;
+  top: 5px;
+  overflow: visible;
+}
+#n_8_bg {
+  fill: rgba(38,153,251,1);
+}
+.n_8_bg {
+  position: absolute;
+  overflow: visible;
+  width: 6px;
+  height: 6px;
+  left: 0px;
+  top: 0px;
+}
+#n_9_bh {
+  fill: rgba(188,224,253,1);
+}
+.n_9_bh {
+  position: absolute;
+  overflow: visible;
+  width: 6px;
+  height: 6px;
+  left: 16px;
+  top: 0px;
+}
+#n_10_bi {
+  fill: rgba(188,224,253,1);
+}
+.n_10_bi {
+  position: absolute;
+  overflow: visible;
+  width: 6px;
+  height: 6px;
+  left: 32px;
+  top: 0px;
+}
+#n_11_bj {
+  fill: rgba(188,224,253,1);
+}
+.n_11_bj {
+  position: absolute;
+  overflow: visible;
+  width: 6px;
+  height: 6px;
+  left: 48px;
+  top: 0px;
+}
+#SKIP {
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  cursor: pointer;
+  overflow: visible;
+  width: 34px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  color: rgba(38,153,251,1);
+}
+#Navigation_Bar_bl {
+  position: absolute;
+  width: 332px;
+  height: 68px;
+  left: 40px;
+  top: 0px;
+  overflow: visible;
+}
+#n_68_bm {
+  fill: transparent;
+}
+.n_68_bm {
+  position: absolute;
+  overflow: visible;
+  width: 332px;
+  height: 20px;
+  left: 0px;
+  top: 0px;
+}
+#n_69_bn {
+  fill: transparent;
+}
+.n_69_bn {
+  position: absolute;
+  overflow: visible;
+  width: 332px;
+  height: 48px;
+  left: 0px;
+  top: 20px;
+}
+#Menu_bo {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 316px;
+  top: 35px;
+  overflow: visible;
+  --web-animation: fadein 0.3s ease-out;
+  --web-action-type: page;
+  --web-action-target: Menu_.html;
+  cursor: pointer;
+}
+#n_175_bp {
+  fill: transparent;
+}
+.n_175_bp {
+  position: absolute;
+  overflow: visible;
+  width: 16px;
+  height: 16px;
+  left: 0px;
+  top: 0px;
+}
+#n_4_bq {
+  fill: rgba(38,153,251,1);
+}
+.n_4_bq {
+  overflow: visible;
+  position: absolute;
+  width: 16px;
+  height: 14px;
+  left: 0px;
+  top: 1px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Backward_arrow_br {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 0px;
+  top: 35px;
+  overflow: visible;
+  --web-animation: fadein 0.3s ease-out;
+  --web-action-type: page;
+  --web-action-target: Welcome.html;
+  cursor: pointer;
+}
+#n_10_bs {
+  fill: rgba(38,153,251,1);
+}
+.n_10_bs {
+  overflow: visible;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  transform: translate(0px, 0px) matrix(1,0,0,1,0,0) rotate(180deg);
+  transform-origin: center;
+  left: 0px;
+  top: 0px;
+}
+#logo_1-1_bt {
+  position: absolute;
+  width: 152.973px;
+  height: 46.67px;
+  left: 89.514px;
+  top: 19.664px;
+  overflow: visible;
+}
+#n____________NEXT____bc {
+  left: 62px;
+  top: 522px;
+  position: absolute;
+  overflow: visible;
+  width: 311px;
+  height: 93px;
+  line-height: 24px;
+  margin-top: -5px;
+  text-align: center;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(38,153,251,1);
+}
+#n_588 {
+  position: absolute;
+  width: 332px;
+  height: 16px;
+  left: 40px;
+  top: 700px;
+  overflow: visible;
+  --web-animation: fadein 0.3s ease-out;
+  --web-action-type: page;
+  --web-action-target: Guide___2.html;
+  cursor: pointer;
+}
+#NEXT_be {
+  left: 295px;
+  top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 38px;
+  white-space: nowrap;
+  text-align: right;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  color: rgba(38,153,251,1);
+}
+#Pagination_bf {
+  position: absolute;
+  width: 54px;
+  height: 6px;
+  left: 140px;
+  top: 5px;
+  overflow: visible;
+}
+#n_8_bg {
+  fill: rgba(38,153,251,1);
+}
+.n_8_bg {
+  position: absolute;
+  overflow: visible;
+  width: 6px;
+  height: 6px;
+  left: 0px;
+  top: 0px;
+}
+#n_9_bh {
+  fill: rgba(188,224,253,1);
+}
+.n_9_bh {
+  position: absolute;
+  overflow: visible;
+  width: 6px;
+  height: 6px;
+  left: 16px;
+  top: 0px;
+}
+#n_10_bi {
+  fill: rgba(188,224,253,1);
+}
+.n_10_bi {
+  position: absolute;
+  overflow: visible;
+  width: 6px;
+  height: 6px;
+  left: 32px;
+  top: 0px;
+}
+#n_11_bj {
+  fill: rgba(188,224,253,1);
+}
+.n_11_bj {
+  position: absolute;
+  overflow: visible;
+  width: 6px;
+  height: 6px;
+  left: 48px;
+  top: 0px;
+}
+#SKIP_bk {
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 34px;
+  white-space: nowrap;
+  --web-animation: fadein 0.3s ease-out;
+  --web-action-type: page;
+  --web-action-target: Gallary_page.html;
+  cursor: pointer;
+  text-align: left;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  color: rgba(38,153,251,1);
+}
+
+#n_68_bm {
+  fill: transparent;
+}
+.n_68_bm {
+  position: absolute;
+  overflow: visible;
+  width: 332px;
+  height: 20px;
+  left: 0px;
+  top: 0px;
+}
+#n_69_bn {
+  fill: transparent;
+}
+.n_69_bn {
+  position: absolute;
+  overflow: visible;
+  width: 332px;
+  height: 48px;
+  left: 0px;
+  top: 20px;
+}
+#Menu_bo {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 316px;
+  top: 35px;
+  overflow: visible;
+  --web-animation: fadein 0.3s ease-out;
+  --web-action-type: page;
+  --web-action-target: Menu_.html;
+  cursor: pointer;
+}
+#n_175_bp {
+  fill: transparent;
+}
+.n_175_bp {
+  position: absolute;
+  overflow: visible;
+  width: 16px;
+  height: 16px;
+  left: 0px;
+  top: 0px;
+}
+#n_4_bq {
+  fill: rgba(38,153,251,1);
+}
+.n_4_bq {
+  overflow: visible;
+  position: absolute;
+  width: 16px;
+  height: 14px;
+  left: 0px;
+  top: 1px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Backward_arrow_br {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 0px;
+  top: 35px;
+  overflow: visible;
+  --web-animation: fadein 0.3s ease-out;
+  --web-action-type: page;
+  --web-action-target: Welcome.html;
+  cursor: pointer;
+}
+#n_10_bs {
+  fill: rgba(38,153,251,1);
+}
+.n_10_bs {
+  overflow: visible;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  transform: translate(0px, 0px) matrix(1,0,0,1,0,0) rotate(180deg);
+  transform-origin: center;
+  left: 0px;
+  top: 0px;
+}
+#logo_1-1_bt {
+  position: absolute;
+  width: 152.973px;
+  height: 46.67px;
+  left: 89.514px;
+  top: 19.664px;
+  overflow: visible;
+}
+#guide_img1 {
+  position: absolute;
+  width: 332px;
+  height: 332px;
+  left: 40px;
+  top: 160px;
+  overflow: visible;
+}
+
+#Menu_cd {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 316px;
+  top: 35px;
+  overflow: visible;
+}
+#n_175 {
+  fill: transparent;
+}
+.n_175 {
+  position: absolute;
+  overflow: visible;
+  width: 16px;
+  height: 16px;
+  left: 0px;
+  top: 0px;
+}
+#n_4 {
+  fill: rgba(38,153,251,1);
+}
+.n_4 {
+  overflow: visible;
+  position: absolute;
+  width: 16px;
+  height: 14px;
+  left: 0px;
+  top: 1px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Backward_arrow {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 0px;
+  top: 35px;
+  overflow: visible;
+}
+#n_10 {
+  fill: rgba(38,153,251,1);
+}
+.n_10 {
+  overflow: visible;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  transform: translate(0px, 0px) matrix(1,0,0,1,0,0) rotate(180deg);
+  transform-origin: center;
+  left: 0px;
+  top: 0px;
+}

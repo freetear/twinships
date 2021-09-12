@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+  <head>
+  <meta charset="UTF-8">
+  <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+
+  <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+  <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-analytics.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
+  </head>
+  <h1>Firebase Test</h1>
+  <p>Firebase console에 데이터가 추가 되었는지 확인하세요</p>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDWIlGCI3SNvHJKLQFxD0eMdXzODAjToLQ",
+    authDomain: "twinships-210906.firebaseapp.com",
+    databaseURL: "https://twinships-210906-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "twinships-210906",
+    storageBucket: "twinships-210906.appspot.com",
+    messagingSenderId: "126211724461",
+    appId: "1:126211724461:web:dbbb0f54e9867d20886224",
+    measurementId: "G-GGXXTRP338"
+  };
+  firebase.initializeApp(config);
+   
+  var newPostKey = firebase.database().ref().child('posts').push().key;
+ 
+  var postData = {
+    brdno: newPostKey,
+    brdwriter:"홍길동",
+    brdtitle:"게시판 제목",
+    brdmemo:"게시물 내용",
+    brddate: Date.now()
+  };
+ 
+  var updates = {};
+  updates['/board/' + newPostKey] = postData;
+ 
+  firebase.database().ref().update(updates);
+           
+</script>

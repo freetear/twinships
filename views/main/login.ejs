@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Test & MySite</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-app.js"></script>
+  <!-- TODO: Add SDKs for Firebase products that you want to use https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-auth.js"></script> <!-- 이메일/비밀번호 로그인 -->
+  <div id="main">
+    <form name="form1" action="login_" method="POST">
+      <table border="1" style="width:600px">
+        <colgroup>
+          <col width='15%' />
+          <cl width='*%' />
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>ID</td>
+            <td><input type="text" name="id" size="20" maxlength="20" </td>
+          </tr>
+          <tr>
+            <td>Password</td>
+            <td><input type="password" name="passwd" size="20" maxlength="20" </td>
+          </tr>
+        </tbody>
+      </table> <a href="#" onclick="form1.submit()">Email Login</a> <input type="button" id="liGoogleBtn" value="Google Login">
+    </form>
+  </div> <!-- 구글 로그인 부분 -->
+<script> // firebase 중요 설정 키값 
+  const firebaseConfig = {
+    apiKey: "AIzaSyDWIlGCI3SNvHJKLQFxD0eMdXzODAjToLQ",
+  authDomain: "twinships-210906.firebaseapp.com",
+  databaseURL: "https://twinships-210906-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "twinships-210906",
+  storageBucket: "twinships-210906.appspot.com",
+  messagingSenderId: "126211724461",
+  appId: "1:126211724461:web:dbbb0f54e9867d20886224",
+  measurementId: "G-GGXXTRP338"
+  }; 
+  // firebase 초기화 
+  firebase.initializeApp(firebaseConfig); 
+  //firebase.analytics(); 
+  var gmail = document.getElementById("liGoogleBtn"); 
+  gmail.addEventListener('click', e => { 
+    var provider = new firebase.auth.GoogleAuthProvider(); 
+    firebase.auth().signInWithPopup(provider)
+    .then(function(result) {
+       var token = result.credential.accessToken; 
+       var user = result.user; 
+       console.log("Token : " + token + " user : " + user); 
+       console.log("구글 로그인 완료!!!"); })
+    .catch(function(err) { console.log(err); }); }); 
+</script>
+</body>
+
+</html>
