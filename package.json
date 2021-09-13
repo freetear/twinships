@@ -1,6 +1,9 @@
 {
   "name": "twinships",
   "version": "0.0.0",
+  "nodemonConfig": {
+    "ext": "js,html,css"
+  },
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
