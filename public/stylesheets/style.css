@@ -79,9 +79,9 @@ a { color: #00B7FF;}
   width: 0;
   height: 100%;
   left: 0;
-  top: 60px;
   overflow-x: hidden;
   transition: 0.5s;
+  background: rgba(38,153,251,1);
   /* overflow: visible; */
 }
 #n_175 {
@@ -531,17 +531,18 @@ a { color: #00B7FF;}
   left: 0px;
   top: 0px;
 }
-#profile {
+.profile {
   position: absolute;
-  width: 372px;
+  width: 412px;
   height: 88px;
   left: 0px;
-  top: 645px;
+  bottom: 0;
   overflow: visible;
   --web-animation: fadein 0.3s ease-out;
   --web-action-type: page;
   --web-action-target: Personal_.html;
   cursor: pointer;
+  background: rgba(255,255,255,1);
 }
 #n_582 {
   fill: rgba(255,255,255,1);
@@ -667,7 +668,7 @@ a { color: #00B7FF;}
 .menu-group-text {
   position: absolute;
   width: 148px;
-  left: 160px;
+  left: 120px;
   top: 115px;
   overflow: visible;
 }
@@ -710,6 +711,9 @@ a { color: #00B7FF;}
 }
 .nav_icon {
   font-size: 1.25rem;
+}
+.material-icons {
+  vertical-align: middle;
 }
 .bx {
   font-family: boxicons!important;

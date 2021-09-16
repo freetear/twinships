@@ -1,7 +1,7 @@
 {% set pageVar = {title: 'TWINSHIPS - Login'} %}
 {% extends './layout/base.html' %}
 {% block content %}
-<div id="container">
+<div class="container">
   <div id="n__1">
     <span>사용법 알림 2</span>
   </div>
@@ -12,7 +12,7 @@
     <svg class="n_69_bn">
       <rect id="n_69_bn" rx="0" ry="0" x="0" y="0" width="332" height="48"></rect>
     </svg>
-    <div onclick="application.goToTargetView(event)" id="Menu_bo">
+    <div onclick="openNav()" id="Menu_bo">
       <svg class="n_175_bp">
         <rect id="n_175_bp" rx="0" ry="0" x="0" y="0" width="16" height="16"></rect>
       </svg>
@@ -54,6 +54,7 @@
     <div id="SKIP"><span>BACK</span></div>
   </div>
   <img id="guide_img1" src="images/guide_img1.png" srcset="images/guide_img2.png 1x, images/guide_img2@2x.png 2x">
+  {% include './layout/layoutMenu.html' %}
 </div>
 {% endblock %}
 {% block  script %}
