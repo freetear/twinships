@@ -352,14 +352,6 @@ a { color: #00B7FF;}
   font-size: 14px;
   color: rgba(38,153,251,1);
 }
-#Navigation_Bar {
-  position: absolute;
-  width: 332px;
-  height: 68px;
-  left: 40px;
-  top: 0px;
-  overflow: visible;
-}
 #n_68 {
   fill: transparent;
 }
@@ -933,14 +925,7 @@ a { color: #00B7FF;}
   font-size: 14px;
   color: rgba(38,153,251,1);
 }
-#Navigation_Bar_bl {
-  position: absolute;
-  width: 332px;
-  height: 68px;
-  left: 40px;
-  top: 0px;
-  overflow: visible;
-}
+
 #n_68_bm {
   fill: transparent;
 }
@@ -974,17 +959,6 @@ a { color: #00B7FF;}
   --web-action-type: page;
   --web-action-target: Menu_.html;
   cursor: pointer;
-}
-#n_175_bp {
-  fill: transparent;
-}
-.n_175_bp {
-  position: absolute;
-  overflow: visible;
-  width: 16px;
-  height: 16px;
-  left: 0px;
-  top: 0px;
 }
 #n_4_bq {
   fill: rgba(38,153,251,1);
@@ -1188,18 +1162,6 @@ a { color: #00B7FF;}
   height: 16px;
   left: 0px;
   top: 0px;
-}
-#n_4_bq {
-  fill: rgba(38,153,251,1);
-}
-.n_4_bq {
-  overflow: visible;
-  position: absolute;
-  width: 16px;
-  height: 14px;
-  left: 0px;
-  top: 1px;
-  transform: matrix(1,0,0,1,0,0);
 }
 #Backward_arrow_br {
   position: absolute;
