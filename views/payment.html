@@ -1,0 +1,782 @@
+{% set pageVar = {title: 'TWINSHIPS - Payment'} %}
+{% extends './layout/base.html' %}
+{% block content %}
+<style id="applicationStylesheet" type="text/css">
+	.mediaViewInfo {
+		--web-view-name: Payment;
+		--web-view-id: Payment;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: Payment;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#Payment {
+		position: absolute;
+		width: 412px;
+		height: 870px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		--web-view-name: Payment;
+		--web-view-id: Payment;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	@keyframes fadein {
+	
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	
+	}
+	#Amount {
+		position: absolute;
+		width: 226px;
+		height: 106px;
+		left: 40px;
+		top: 164px;
+		overflow: visible;
+	}
+	#n_283 {
+		position: absolute;
+		width: 178px;
+		height: 44px;
+		left: 9px;
+		top: 0px;
+		overflow: visible;
+	}
+	#n_50000 {
+		left: 33px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 146px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 40px;
+		color: rgba(38,153,251,1);
+	}
+	#Icon_awesome-won-sign {
+		fill: rgba(38,153,251,1);
+	}
+	.Icon_awesome-won-sign {
+		overflow: visible;
+		position: absolute;
+		width: 27.938px;
+		height: 21.744px;
+		left: 0px;
+		top: 10.797px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#n___20210811 {
+		left: 64px;
+		top: 60px;
+		position: absolute;
+		overflow: visible;
+		width: 163px;
+		white-space: nowrap;
+		line-height: 24px;
+		margin-top: -5px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(38,153,251,1);
+	}
+	#n_321 {
+		fill: rgba(188,224,253,1);
+	}
+	.n_321 {
+		position: absolute;
+		overflow: visible;
+		width: 48px;
+		height: 48px;
+		left: 0px;
+		top: 58px;
+	}
+	#Navigation_Bar {
+		position: absolute;
+		width: 72px;
+		height: 24px;
+		left: 40px;
+		top: 100px;
+		overflow: visible;
+	}
+	#Text {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 73px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 18px;
+		color: rgba(38,153,251,1);
+	}
+	#Pay_Now {
+		position: absolute;
+		width: 155px;
+		height: 48px;
+		top: 299px;
+		overflow: visible;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: Thank_you.html;
+		cursor: pointer;
+	}
+	#n_150 {
+		fill: rgba(38,153,251,1);
+	}
+	.n_150 {
+		position: absolute;
+		overflow: visible;
+		width: 155px;
+		height: 48px;
+		left: 0px;
+		top: 0px;
+	}
+	#n_ {
+		left: 57px;
+		top: 17px;
+		position: absolute;
+		overflow: visible;
+		width: 43px;
+		white-space: nowrap;
+		line-height: 12px;
+		margin-top: -1px;
+		text-align: center;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 10px;
+		color: rgba(255,255,255,1);
+	}
+	#Decline {
+		position: absolute;
+		width: 155px;
+		height: 48px;
+		top: 299px;
+    left: 200px;
+		overflow: visible;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: Personal_.html;
+		cursor: pointer;
+	}
+	#n_151 {
+		fill: transparent;
+		stroke: rgba(188,224,253,1);
+		stroke-width: 2px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.n_151 {
+		position: absolute;
+		overflow: visible;
+		width: 155px;
+		height: 48px;
+		left: 0px;
+		top: 0px;
+	}
+	#Text_ {
+		left: 58px;
+		top: 17px;
+		position: absolute;
+		overflow: visible;
+		width: 41px;
+		white-space: nowrap;
+		line-height: 12px;
+		margin-top: -1px;
+		text-align: center;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 10px;
+		color: rgba(38,153,251,1);
+	}
+	#Dropdown {
+		position: absolute;
+		width: 332px;
+		height: 48px;
+		top: 392px;
+		overflow: visible;
+	}
+	#n_1375 {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(241,249,255,1);
+		stroke-width: 2px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.n_1375 {
+		position: absolute;
+		overflow: visible;
+		width: 332px;
+		height: 48px;
+		left: 0px;
+		top: 0px;
+	}
+	#n__1 {
+		position: absolute;
+		width: 10px;
+		height: 10px;
+		left: 306px;
+		top: 19px;
+		overflow: visible;
+	}
+	#n_36 {
+		fill: rgba(38,153,251,1);
+	}
+	.n_36 {
+		overflow: visible;
+		position: absolute;
+		width: 9.4px;
+		height: 6.1px;
+		left: 0px;
+		top: 2px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#n_1467 {
+		fill: transparent;
+	}
+	.n_1467 {
+		position: absolute;
+		overflow: visible;
+		width: 10px;
+		height: 10px;
+		left: 0px;
+		top: 0px;
+	}
+	#n_582 {
+		position: absolute;
+		width: 60.745px;
+		height: 18.646px;
+		left: 16px;
+		top: 15.469px;
+		overflow: visible;
+	}
+	#n_229 {
+		fill: rgba(38,153,251,1);
+	}
+	.n_229 {
+		overflow: visible;
+		position: absolute;
+		width: 7.99px;
+		height: 18.057px;
+		left: 21.414px;
+		top: 0.313px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#n_230 {
+		fill: rgba(38,153,251,1);
+	}
+	.n_230 {
+		overflow: visible;
+		position: absolute;
+		width: 14.771px;
+		height: 18.646px;
+		left: 29.404px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#n_231 {
+		fill: rgba(38,153,251,1);
+	}
+	.n_231 {
+		overflow: visible;
+		position: absolute;
+		width: 17.643px;
+		height: 18.023px;
+		left: 43.102px;
+		top: 0.346px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#n_232 {
+		fill: rgba(38,153,251,1);
+	}
+	.n_232 {
+		overflow: visible;
+		position: absolute;
+		width: 17.365px;
+		height: 18.057px;
+		left: 5.154px;
+		top: 0.313px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#n_233 {
+		fill: rgba(188,224,253,1);
+	}
+	.n_233 {
+		overflow: visible;
+		position: absolute;
+		width: 11.969px;
+		height: 9.824px;
+		left: 0px;
+		top: 0.313px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Inputs {
+		position: absolute;
+		width: 332px;
+		height: 284px;		
+		top: 467px;
+		overflow: visible;
+	}
+	#n_1376 {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(241,249,255,1);
+		stroke-width: 2px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.n_1376 {
+		position: absolute;
+		overflow: visible;
+		width: 332px;
+		height: 284px;
+		left: 0px;
+		top: 0px;
+	}
+	#n_1377 {
+		fill: rgba(241,249,255,1);
+	}
+	.n_1377 {
+		position: absolute;
+		overflow: visible;
+		width: 332px;
+		height: 1px;
+		left: 0px;
+		top: 56px;
+	}
+	#n_1378 {
+		fill: rgba(241,249,255,1);
+	}
+	.n_1378 {
+		position: absolute;
+		overflow: visible;
+		width: 332px;
+		height: 1px;
+		left: 0px;
+		top: 113px;
+	}
+	#n_1379 {
+		fill: rgba(241,249,255,1);
+	}
+	.n_1379 {
+		position: absolute;
+		overflow: visible;
+		width: 332px;
+		height: 1px;
+		left: 0px;
+		top: 170px;
+	}
+	#n_1380 {
+		fill: rgba(241,249,255,1);
+	}
+	.n_1380 {
+		position: absolute;
+		overflow: visible;
+		width: 332px;
+		height: 1px;
+		left: 0px;
+		top: 227px;
+	}
+	#n__ {
+		left: 16px;
+		top: 18px;
+		position: absolute;
+		overflow: visible;
+		width: 51px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		color: rgba(38,153,251,1);
+	}
+	#CARDHOLDER_NAME {
+		left: 212px;
+		top: 23px;
+		position: absolute;
+		overflow: visible;
+		width: 104px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 10px;
+		color: rgba(188,224,253,1);
+	}
+	#CARD_NUMBER {
+		left: 240px;
+		top: 80px;
+		position: absolute;
+		overflow: visible;
+		width: 77px;
+		white-space: nowrap;
+		text-align: right;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 10px;
+		color: rgba(188,224,253,1);
+	}
+	#EXPIRE_DATE {
+		left: 250px;
+		top: 137px;
+		position: absolute;
+		overflow: visible;
+		width: 67px;
+		white-space: nowrap;
+		text-align: right;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 10px;
+		color: rgba(188,224,253,1);
+	}
+	#CVV {
+		left: 295px;
+		top: 194px;
+		position: absolute;
+		overflow: visible;
+		width: 22px;
+		white-space: nowrap;
+		text-align: right;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 10px;
+		color: rgba(188,224,253,1);
+	}
+	#ADDRESS {
+		left: 267px;
+		top: 250px;
+		position: absolute;
+		overflow: visible;
+		width: 50px;
+		white-space: nowrap;
+		text-align: right;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 10px;
+		color: rgba(188,224,253,1);
+	}
+	#n_234_-_5678_-_3459_-_2456 {
+		left: 16px;
+		top: 77px;
+		position: absolute;
+		overflow: visible;
+		width: 163px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		color: rgba(38,153,251,1);
+	}
+	#n_5______21 {
+		left: 16px;
+		top: 134px;
+		position: absolute;
+		overflow: visible;
+		width: 59px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		color: rgba(38,153,251,1);
+	}
+	#n_23 {
+		left: 16px;
+		top: 191px;
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		color: rgba(38,153,251,1);
+	}
+	#n__166 {
+		left: 16px;
+		top: 245px;
+		position: absolute;
+		overflow: visible;
+		width: 116px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		color: rgba(38,153,251,1);
+	}
+	#Navigation_Bar_by {
+		position: absolute;
+		width: 332px;
+		height: 68px;
+		left: 40px;
+		top: 0px;
+		overflow: visible;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: Menu_.html;
+		cursor: pointer;
+	}
+	#n_68 {
+		fill: transparent;
+	}
+	.n_68 {
+		position: absolute;
+		overflow: visible;
+		width: 332px;
+		height: 20px;
+		left: 0px;
+		top: 0px;
+	}
+	#n_69 {
+		fill: transparent;
+	}
+	.n_69 {
+		position: absolute;
+		overflow: visible;
+		width: 332px;
+		height: 48px;
+		left: 0px;
+		top: 20px;
+	}
+	#Menu {
+		position: absolute;
+		width: 16px;
+		height: 16px;
+		left: 316px;
+		top: 35px;
+		overflow: visible;
+	}
+	#n_175 {
+		fill: transparent;
+	}
+	.n_175 {
+		position: absolute;
+		overflow: visible;
+		width: 16px;
+		height: 16px;
+		left: 0px;
+		top: 0px;
+	}
+	#n_4 {
+		fill: rgba(38,153,251,1);
+	}
+	.n_4 {
+		overflow: visible;
+		position: absolute;
+		width: 16px;
+		height: 14px;
+		left: 0px;
+		top: 1px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Backward_arrow {
+		position: absolute;
+		width: 16px;
+		height: 16px;
+		left: 0px;
+		top: 35px;
+		overflow: visible;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: Gallary_page.html;
+		cursor: pointer;
+	}
+	#n_10 {
+		fill: rgba(38,153,251,1);
+	}
+	.n_10 {
+		overflow: visible;
+		position: absolute;
+		width: 16px;
+		height: 16px;
+		transform: translate(0px, 0px) matrix(1,0,0,1,0,0) rotate(180deg);
+		transform-origin: center;
+		left: 0px;
+		top: 0px;
+	}
+	#logo_1-1 {
+		position: absolute;
+		width: 152.973px;
+		height: 46.67px;
+		left: 89.514px;
+		top: 19.664px;
+		overflow: visible;
+	}
+</style>
+<main>
+  <div class="container px-4 px-md-3">
+    <div id="Amount">
+      <div id="n_283">
+        <div id="n_50000">
+          <span>150,000</span>
+        </div>
+        <svg class="Icon_awesome-won-sign" viewBox="0 2.299 27.938 21.744">
+          <path id="Icon_awesome-won-sign" d="M 27.35642623901367 10.04299831390381 C 27.67655372619629 10.04299831390381 27.9384765625 9.780497550964355 27.9384765625 9.459663391113281 L 27.9384765625 7.51521110534668 C 27.9384765625 7.194376468658447 27.67655372619629 6.931875228881836 27.35642623901367 6.931875228881836 L 25.02821922302246 6.931875228881836 L 25.93039894104004 3.01380443572998 C 26.01285552978516 2.649219989776611 25.73638153076172 2.299218654632568 25.36289978027344 2.299218654632568 L 23.12685203552246 2.299218654632568 C 22.85037803649902 2.299218654632568 22.61270713806152 2.493663787841797 22.55935287475586 2.761025905609131 L 21.86088943481445 6.931875228881836 L 16.53026580810547 6.931875228881836 L 15.57473087310791 2.751303672790527 C 15.51167488098145 2.483941555023193 15.27885437011719 2.299218654632568 15.00722980499268 2.299218654632568 L 12.87304019927979 2.299218654632568 C 12.60141754150391 2.299218654632568 12.36859512329102 2.483941555023193 12.30554008483887 2.751303672790527 L 11.33545398712158 6.931875228881836 L 6.063037395477295 6.931875228881836 L 5.214212417602539 2.765887260437012 C 5.160857677459717 2.493664026260376 4.918335914611816 2.299218654632568 4.641861438751221 2.299218654632568 L 2.599830389022827 2.299218654632568 C 2.226347208023071 2.299218654632568 1.949872851371765 2.644359111785889 2.03233003616333 3.008943557739258 L 2.910258054733276 6.931875228881836 L 0.5820516347885132 6.931875228881836 C 0.261923223733902 6.931875228881836 0 7.194376468658447 0 7.51521110534668 L 0 9.459663391113281 C 0 9.780497550964355 0.261923223733902 10.04299831390381 0.5820516347885132 10.04299831390381 L 3.603869676589966 10.04299831390381 L 3.953100442886353 11.59856033325195 L 0.5820516347885132 11.59856033325195 C 0.261923223733902 11.59856033325195 0 11.86106204986572 0 12.1818962097168 L 0 14.12634754180908 C 0 14.44718170166016 0.261923223733902 14.70968341827393 0.5820516347885132 14.70968341827393 L 4.651562213897705 14.70968341827393 L 6.635387897491455 23.58610725402832 C 6.693593502044678 23.85346794128418 6.931264400482178 24.04305267333984 7.202888488769531 24.04305267333984 L 9.957932472229004 24.04305267333984 C 10.22955703735352 24.04305267333984 10.46237754821777 23.85346794128418 10.52543354034424 23.59096717834473 L 12.57716464996338 14.70968341827393 L 15.24975109100342 14.70968341827393 L 17.30633354187012 23.59096717834473 C 17.3693904876709 23.85346794128418 17.60220909118652 24.04305267333984 17.87383460998535 24.04305267333984 L 20.62887954711914 24.04305267333984 C 20.90050315856934 24.04305267333984 21.13332366943359 23.85346794128418 21.19637870788574 23.59096717834473 L 23.23841094970703 14.70968341827393 L 27.35642623901367 14.70968341827393 C 27.67655372619629 14.70968341827393 27.9384765625 14.44718170166016 27.9384765625 14.12634754180908 L 27.9384765625 12.1818962097168 C 27.9384765625 11.86106204986572 27.67655372619629 11.59856033325195 27.35642623901367 11.59856033325195 L 23.95627403259277 11.59856033325195 L 24.31520652770996 10.04299831390381 L 27.35642623901367 10.04299831390381 Z M 8.915090560913086 17.33469390869141 C 8.614363670349121 18.58886528015137 8.585261344909668 19.62914657592773 8.561009407043457 19.62914657592773 L 8.507654190063477 19.62914657592773 C 8.507654190063477 19.62914657592773 8.425196647644043 18.5596981048584 8.177824974060059 17.33469390869141 L 7.644278049468994 14.70968341827393 L 9.5262451171875 14.70968341827393 L 8.915090560913086 17.33469390869141 Z M 10.24895858764648 11.59856033325195 L 7.008871555328369 11.59856033325195 L 6.693593502044678 10.04299831390381 L 10.6127405166626 10.04299831390381 L 10.24895858764648 11.59856033325195 Z M 13.29987812042236 11.59856033325195 L 13.39688682556152 11.18050289154053 C 13.48904514312744 10.79161262512207 13.56665229797363 10.40272235870361 13.62970733642578 10.04299831390381 L 14.20205783843994 10.04299831390381 C 14.26511287689209 10.40272235870361 14.3427209854126 10.79161262512207 14.4348783493042 11.18050289154053 L 14.53188705444336 11.59856033325195 L 13.29987812042236 11.59856033325195 Z M 19.64909172058105 17.33469390869141 C 19.40172004699707 18.5596981048584 19.31926345825195 19.62914657592773 19.31926345825195 19.62914657592773 L 19.26590919494629 19.62914657592773 C 19.23680686950684 19.62914657592773 19.21255493164062 18.58886528015137 18.91182708740234 17.33469390869141 L 18.31037330627441 14.70968341827393 L 20.2068920135498 14.70968341827393 L 19.64909172058105 17.33469390869141 Z M 20.87140083312988 11.59856033325195 L 17.60221099853516 11.59856033325195 L 17.24813079833984 10.04299831390381 L 21.20608139038086 10.04299831390381 L 20.87140083312988 11.59856033325195 Z">
+          </path>
+        </svg>
+      </div>
+      <div id="n___20210811">
+        <span>박장군</span><br/><span style="font-style:normal;font-weight:bold;"></span><span>결재대기중 — 2021.08.11</span>
+      </div>
+      <svg class="n_321">
+        <ellipse id="n_321" rx="24" ry="24" cx="24" cy="24">
+        </ellipse>
+      </svg>
+    </div>
+    <div id="Navigation_Bar" class="Navigation_Bar">
+      <div id="Text">
+        <span>결재하기</span>
+      </div>
+    </div>
+    <div class="d-flex flex-column flex-sm-row mt-5">
+      <div onclick="application.goToTargetView(event)" id="Pay_Now" class="col-6">
+        <svg class="n_150">
+          <rect id="n_150" rx="4" ry="4" x="0" y="0" width="155" height="48">
+          </rect>
+        </svg>
+        <div id="n_">
+          <span>결재하기 </span>
+        </div>
+      </div>
+      <div onclick="application.goToTargetView(event)" id="Decline" class="col-6">
+        <svg class="n_151">
+          <rect id="n_151" rx="4" ry="4" x="0" y="0" width="155" height="48">
+          </rect>
+        </svg>
+        <div id="Text_">
+          <span>취소하기</span>
+        </div>
+      </div>
+    </div>
+    <div id="Dropdown">
+      <svg class="n_1375">
+        <rect id="n_1375" rx="0" ry="0" x="0" y="0" width="332" height="48">
+        </rect>
+      </svg>
+      <div id="n__1" class="______1">
+        <svg class="n_36" viewBox="2 2 9.4 6.1">
+          <path id="n_36" d="M 6.699999809265137 8.100000381469727 L 2 3.400000095367432 L 3.400000095367432 2 L 6.699999809265137 5.300000190734863 L 10 2 L 11.39999961853027 3.400000095367432 L 6.699999809265137 8.100000381469727 Z">
+          </path>
+        </svg>
+        <svg class="n_1467">
+          <rect id="n_1467" rx="0" ry="0" x="0" y="0" width="10" height="10">
+          </rect>
+        </svg>
+      </div>
+      <div id="n_582">
+        <svg class="n_229" viewBox="61.9 0.9 7.991 18.058">
+          <path id="n_229" d="M 61.89999389648438 18.95751571655273 L 64.97877502441406 0.8999999165534973 L 69.89096832275391 0.8999999165534973 L 66.81218719482422 18.95751571655273 L 61.89999389648438 18.95751571655273 Z">
+          </path>
+        </svg>
+        <svg class="n_230" viewBox="85 0 14.771 18.646">
+          <path id="n_230" d="M 99.77117919921875 0.7610448002815247 C 98.80258178710938 0.3805224001407623 97.28048706054688 0 95.37786865234375 0 C 90.50025939941406 0 87.07557678222656 2.456099271774292 87.07557678222656 5.949986934661865 C 87.04096984863281 8.54445743560791 89.53166198730469 9.99736213684082 91.39968872070312 10.86218547821045 C 93.30229187011719 11.76160144805908 93.95956420898438 12.31508922576904 93.95956420898438 13.11072731018066 C 93.95956420898438 14.32147979736328 92.43748474121094 14.87496566772461 91.0191650390625 14.87496566772461 C 89.04736328125 14.87496566772461 88.00958251953125 14.59822463989258 86.38369750976562 13.94095706939697 L 85.69184875488281 13.6296215057373 L 84.99998474121094 17.6769962310791 C 86.14157104492188 18.19589233398438 88.28631591796875 18.61100769042969 90.50025939941406 18.64559745788574 C 95.689208984375 18.64559745788574 99.04473876953125 16.22409248352051 99.07931518554688 12.48805332183838 C 99.11390686035156 10.44707107543945 97.79939270019531 8.855794906616211 94.96275329589844 7.575855731964111 C 93.23310852050781 6.745625972747803 92.19532775878906 6.192137718200684 92.19532775878906 5.327314376831055 C 92.19532775878906 4.566269397735596 93.09474182128906 3.770631551742554 94.99734497070312 3.770631551742554 C 96.62321472167969 3.736038446426392 97.76478576660156 4.081967830657959 98.66419982910156 4.462491035461426 L 99.11390686035156 4.670048713684082 L 99.77117919921875 0.7610448002815247">
+          </path>
+        </svg>
+        <svg class="n_231" viewBox="124.6 1 17.642 18.023">
+          <path id="n_231" d="M 138.2987976074219 1 L 134.4935607910156 1 C 133.3174285888672 1 132.4179992675781 1.311336636543274 131.8991088867188 2.487496852874756 L 124.6000061035156 19.02292442321777 L 129.7543640136719 19.02292442321777 C 129.7543640136719 19.02292442321777 130.5845489501953 16.80897521972656 130.7921447753906 16.32467651367188 C 131.3456420898438 16.32467651367188 136.3616027832031 16.32467651367188 137.0880584716797 16.32467651367188 C 137.2264251708984 16.94734764099121 137.6761474609375 19.02292442321777 137.6761474609375 19.02292442321777 L 142.2424011230469 19.02292442321777 L 138.2987976074219 1 M 132.2450408935547 12.62322807312012 C 132.6601409912109 11.58544063568115 134.2168426513672 7.572658538818359 134.2168426513672 7.572658538818359 C 134.1822509765625 7.607251644134521 134.6319580078125 6.534870147705078 134.8741149902344 5.843011379241943 L 135.2200317382812 7.399693012237549 C 135.2200317382812 7.399693012237549 136.154052734375 11.7238130569458 136.3615875244141 12.62322807312012 L 132.2450408935547 12.62322807312012 Z">
+          </path>
+        </svg>
+        <svg class="n_232" viewBox="14.9 0.9 17.366 18.058">
+          <path id="n_232" d="M 27.04212379455566 0.8999999165534973 L 22.19911193847656 13.215087890625 L 21.68021774291992 10.72439765930176 C 20.81539344787598 7.853182792663574 18.01336288452148 4.70522403717041 14.89999961853027 3.148541212081909 L 19.29330253601074 18.95751762390137 L 24.51683807373047 18.95751762390137 L 32.26565170288086 0.8999999165534973 L 27.04212379455566 0.8999999165534973">
+          </path>
+        </svg>
+        <svg class="n_233" viewBox="0 0.9 11.969 9.824">
+          <path id="n_233" d="M 7.990970611572266 0.8999999165534973 L 0.06918589770793915 0.8999999165534973 L 0 1.280522227287292 C 6.192137241363525 2.768019199371338 10.27410507202148 6.400278568267822 11.96915912628174 10.72439765930176 L 10.23951148986816 2.422089576721191 C 9.928175926208496 1.280522227287292 9.063351631164551 0.9345927834510803 7.990970611572266 0.8999999165534973">
+          </path>
+        </svg>
+      </div>
+    </div>
+    <div id="Inputs">
+      <svg class="n_1376">
+        <rect id="n_1376" rx="0" ry="0" x="0" y="0" width="332" height="284">
+        </rect>
+      </svg>
+      <svg class="n_1377">
+        <rect id="n_1377" rx="0" ry="0" x="0" y="0" width="332" height="1">
+        </rect>
+      </svg>
+      <svg class="n_1378">
+        <rect id="n_1378" rx="0" ry="0" x="0" y="0" width="332" height="1">
+        </rect>
+      </svg>
+      <svg class="n_1379">
+        <rect id="n_1379" rx="0" ry="0" x="0" y="0" width="332" height="1">
+        </rect>
+      </svg>
+      <svg class="n_1380">
+        <rect id="n_1380" rx="0" ry="0" x="0" y="0" width="332" height="1">
+        </rect>
+      </svg>
+      <div id="n__">
+        <span>박 장 군</span>
+      </div>
+      <div id="CARDHOLDER_NAME">
+        <span>CARDHOLDER NAME</span>
+      </div>
+      <div id="CARD_NUMBER">
+        <span>CARD NUMBER</span>
+      </div>
+      <div id="EXPIRE_DATE">
+        <span>EXPIRE DATE</span>
+      </div>
+      <div id="CVV">
+        <span>CVV</span>
+      </div>
+      <div id="ADDRESS">
+        <span>ADDRESS</span>
+      </div>
+      <div id="n_234_-_5678_-_3459_-_2456">
+        <span>1234 - 5678 - 3459 - 2456</span>
+      </div>
+      <div id="n_5______21">
+        <span>05   /   21</span>
+      </div>
+      <div id="n_23">
+        <span>123</span>
+      </div>
+      <div id="n__166">
+        <span>해운대 좌동로 166</span>
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock %}

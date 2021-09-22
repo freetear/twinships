@@ -1,9 +1,3 @@
-.mediaViewInfo {
-  --web-view-name: TWINSHIPS;
-  --web-view-id: container;
-  --web-scale-on-resize: true;
-  --web-enable-deep-linking: true;
-}
 :root {
   --web-view-ids: container;
 }
@@ -13,16 +7,8 @@
   box-sizing: border-box;
   border: none;
 }
-#container {
-  position: absolute;
-  width: 412px;
-  height: 870px;
-  background-color: rgba(255,255,255,1);
-  overflow: hidden;
-  --web-view-name: Welcome;
-	--web-view-id: container;
-  --web-scale-on-resize: true;
-  --web-enable-deep-linking: true;
+body {
+  max-width : 420px;
 }
 @keyframes fadein {
   
@@ -34,55 +20,47 @@
   }  
 }
 a { color: #00B7FF;}
-#WELCOME_TWINSHIPS {
-  left: 97px;
-  top: 104px;
-  position: absolute;
-  overflow: visible;
-  width: 233px;
-  white-space: nowrap;
-  line-height: 32px;
-  margin-top: -5.5px;
-  text-align: left;
-  font-family: Arial;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 21px;
+.title_logo {
+  position: relative;
+  top: 50px;
+}
+.btn_agree {
+  bottom: 10%;
+}
+.text_color_basic {
   color: rgba(38,153,251,1);
 }
-#n____________NEXT____ {
-  left: 62px;
-  top: 522px;
-  position: absolute;
-  overflow: visible;
-  width: 311px;
-  height: 93px;
+.text_desc {
   line-height: 24px;
-  margin-top: -5px;
   text-align: center;
   font-family: Arial;
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 14px;
   color: rgba(38,153,251,1);
 }
-#n_1468 {
-  position: absolute;
-  width: 412px;
-  height: 870px;
-  left: 0px;
-  top: 0px;
-  overflow: visible;
+.media-body {
+  margin-top: 5px;
+  margin-left: 30px;
 }
 .sidenav {
   position: fixed;
   width: 0;
   height: 100%;
+  top: 0;
   left: 0;
   overflow-x: hidden;
   transition: 0.5s;
   background: rgba(38,153,251,1);
+  z-index: 1;
   /* overflow: visible; */
+}
+.myinfo_name {
+  font-size: 12px;
+  font-weight: bold;
+}
+.myinfo_address {
+  font-size: 10px;
 }
 #n_175 {
   fill: transparent;
@@ -107,64 +85,6 @@ a { color: #00B7FF;}
   top: 1px;
   transform: matrix(1,0,0,1,0,0);
 }
-#Next {
-  position: absolute;
-  width: 332px;
-  height: 53px;
-  left: 40px;
-  top: 700px;
-  overflow: visible;
-}
-#n_112 {
-  fill: rgba(38,153,251,1);
-}
-.n_112 {
-  position: absolute;
-  overflow: visible;
-  width: 332px;
-  height: 53px;
-  left: 0px;
-  top: 0px;
-}
-#btn_agree {
-  left: 62px;
-  top: 712px;
-  position: absolute;
-  overflow: visible;
-  width: 303px;
-  height: 29px;
-  --web-animation: fadein 0.3s ease-out;
-  --web-action-type: page;
-  --web-action-target: Sign_up_.html;
-  cursor: pointer;
-  line-height: 20px;
-  margin-top: -2px;
-  text-align: left;
-  font-family: Segoe UI;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  color: rgba(255,255,255,1);
-}
-#logo_1 {
-  position: absolute;
-  width: 353.004px;
-  height: 107.34px;
-  left: 29.498px;
-  top: 70px;
-  overflow: visible;
-}
-#Login {
-  position: absolute;
-  width: 412px;
-  height: 870px;
-  background-color: rgba(255,255,255,1);
-  overflow: hidden;
-  --web-view-name: Login;
-  --web-view-id: Login;
-  --web-scale-on-resize: true;
-  --web-enable-deep-linking: true;
-}
 @keyframes fadein {
 
   0% {
@@ -174,113 +94,6 @@ a { color: #00B7FF;}
     opacity: 1;
   }
 
-}
-#Next {
-  position: absolute;
-  width: 332px;
-  height: 53px;
-  left: 40px;
-  top: 700px;
-  overflow: visible;
-}
-#n_112 {
-  fill: rgba(38,153,251,1);
-}
-.n_112 {
-  position: absolute;
-  overflow: visible;
-  width: 331px;
-  height: 54px;
-  left: 0px;
-  top: 0px;
-}
-#n_ {
-  position: absolute;
-  width: 18px;
-  height: 17px;
-  left: 157px;
-  top: 18.947px;
-  overflow: visible;
-}
-#n_10 {
-  fill: rgba(255,255,255,1);
-}
-.n_10 {
-  overflow: visible;
-  position: absolute;
-  width: 17.578px;
-  height: 17.578px;
-  left: 0px;
-  top: 0px;
-  transform: matrix(1,0,0,1,0,0);
-}
-#n__x {
-  left: 40px;
-  top: 100px;
-  position: absolute;
-  overflow: visible;
-  width: 112px;
-  white-space: nowrap;
-  line-height: 32px;
-  margin-top: -5.5px;
-  text-align: left;
-  font-family: Arial;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 21px;
-  color: rgba(38,153,251,1);
-}
-.Continue {
-  position: absolute;
-  width: 295px;
-  height: 30px;
-  left: 59px;
-  top: 712px;
-  overflow: visible;
-  --web-animation: fadein 0.3s ease-out;
-  --web-action-type: page;
-  --web-action-target: Welcome.html;
-  cursor: pointer;
-}
-#n_132 {
-  fill: rgba(38,153,251,1);
-}
-.n_132 {
-  position: absolute;
-  overflow: visible;
-  width: 295px;
-  height: 30px;
-  left: 0px;
-  top: 0px;
-}
-#Text {
-  left: 120px;
-  top: 0px;
-  position: absolute;
-  overflow: visible;
-  width: 55px;
-  white-space: nowrap;
-  text-align: center;
-  font-family: Arial;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  color: rgba(255,255,255,1);
-}
-#Inputs {
-  position: absolute;
-  width: 298px;
-  left: 57px;
-  top: 298px;
-  overflow: hidden;
-}
-#inputs {
-  position: absolute;
-  width: 295px;
-  height: 48px;
-  left: 0px;
-  top: 0px;
-  overflow: visible;
 }
 #n_123 {
   fill: rgba(255,255,255,1);
@@ -338,54 +151,6 @@ a { color: #00B7FF;}
   left: 0px;
   top: 0px;
 }
-#Text_ {
-  left: 25px;
-  top: 16px;
-  position: absolute;
-  overflow: visible;
-  width: 60px;
-  white-space: nowrap;
-  text-align: left;
-  font-family: Arial;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  color: rgba(38,153,251,1);
-}
-#n_68 {
-  fill: transparent;
-}
-.n_68 {
-  position: absolute;
-  overflow: visible;
-  width: 332px;
-  height: 20px;
-  left: 0px;
-  top: 0px;
-}
-#n_69 {
-  fill: transparent;
-}
-.n_69 {
-  position: absolute;
-  overflow: visible;
-  width: 332px;
-  height: 48px;
-  left: 0px;
-  top: 20px;
-}
-#Backward_arrow {
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  left: 0px;
-  top: 35px;
-  overflow: visible;
-  --web-animation: fadein 0.3s ease-out;
-  --web-action-type: page;
-  --web-action-target: Sign_up_.html;
-  cursor: pointer;
-}
 #n_10_bc {
   fill: rgba(38,153,251,1);
 }
@@ -398,14 +163,6 @@ a { color: #00B7FF;}
   transform-origin: center;
   left: 0px;
   top: 0px;
-}
-#logo_1-1 {
-  position: absolute;
-  width: 152.973px;
-  height: 46.67px;
-  left: 89.514px;
-  top: 19.664px;
-  overflow: visible;
 }
 .form-control {
   border-color:rgba(188,224,253,1);
@@ -555,22 +312,6 @@ a { color: #00B7FF;}
   top: 25px;
   overflow: visible;
 }
-#Text {
-  left: 0px;
-  top: 0px;
-  position: absolute;
-  overflow: visible;
-  width: 46px;
-  white-space: nowrap;
-  line-height: 26px;
-  margin-top: -5.5px;
-  text-align: left;
-  font-family: Arial;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 15px;
-  color: rgba(38,153,251,1);
-}
 #n__ {
   left: 0px;
   top: 22px;
@@ -626,11 +367,11 @@ a { color: #00B7FF;}
   top: 0px;
   transform: matrix(1,0,0,1,0,0);
 }
-#Logout {
+.menu_logout {
   position: absolute;
   width: 17px;
   height: 18px;
-  left: 314px;
+  right: 30%;
   top: 35px;
   overflow: visible;
 }
@@ -803,55 +544,28 @@ a { color: #00B7FF;}
   left: 0px;
   top: 20px;
 }
-#n__1 {
-  left: 97px;
-  top: 100px;
-  position: absolute;
-  overflow: visible;
-  width: 129px;
+.pagenation {
+  position: relative;
+  margin-top: 30px;
+  width: 100%;
+  height: 100%;
+}
+.next {
+  float: right;
+  cursor: pointer;
   white-space: nowrap;
-  line-height: 32px;
-  margin-top: -5.5px;
-  text-align: left;
+  text-align: right;
   font-family: Arial;
   font-style: normal;
   font-weight: bold;
-  font-size: 21px;
-  color: rgba(38,153,251,1);
-}
-#n____________NEXT____bc {
-  left: 62px;
-  top: 522px;
-  position: absolute;
-  overflow: visible;
-  width: 311px;
-  height: 93px;
-  line-height: 24px;
-  margin-top: -5px;
-  text-align: center;
-  font-family: Arial;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   color: rgba(38,153,251,1);
 }
-#n_584 {
-  position: absolute;
-  width: 332px;
-  height: 16px;
-  left: 40px;
-  top: 700px;
-  overflow: visible;
-}
-#NEXT {
-  left: 295px;
-  top: 0px;
-  position: absolute;
-  overflow: visible;
+.skip {
+  float: left;
   cursor: pointer;
-  width: 38px;
   white-space: nowrap;
-  text-align: right;
+  text-align: left;
   font-family: Arial;
   font-style: normal;
   font-weight: bold;
@@ -910,22 +624,6 @@ a { color: #00B7FF;}
   left: 48px;
   top: 0px;
 }
-#SKIP {
-  left: 0px;
-  top: 0px;
-  position: absolute;
-  cursor: pointer;
-  overflow: visible;
-  width: 34px;
-  white-space: nowrap;
-  text-align: left;
-  font-family: Arial;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  color: rgba(38,153,251,1);
-}
-
 #n_68_bm {
   fill: transparent;
 }
@@ -948,77 +646,93 @@ a { color: #00B7FF;}
   left: 0px;
   top: 20px;
 }
-#Menu_bo {
+.navbar-brand {
+  position: relative;
+  transform: translateX(-50%);
+  left: 50%;
+}
+.btn_nav_back {
   position: absolute;
-  width: 16px;
-  height: 16px;
-  left: 316px;
-  top: 35px;
+  left: 6%;
+  top: 10px;
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+}
+.btn_nav_menu {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 10px;
+  right: 6%;
   overflow: visible;
   --web-animation: fadein 0.3s ease-out;
   --web-action-type: page;
   --web-action-target: Menu_.html;
   cursor: pointer;
+  background-color: transparent;
 }
-#n_4_bq {
-  fill: rgba(38,153,251,1);
+.g-icon {
+  color: rgba(38,153,251,1);
 }
-.n_4_bq {
-  overflow: visible;
-  position: absolute;
-  width: 16px;
-  height: 14px;
-  left: 0px;
-  top: 1px;
-  transform: matrix(1,0,0,1,0,0);
+.text_title {
+  font-size: 21px;
+  font-weight: bold;
+  color: rgba(38,153,251,1);
 }
-#Backward_arrow_br {
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  left: 0px;
-  top: 35px;
-  overflow: visible;
-  --web-animation: fadein 0.3s ease-out;
-  --web-action-type: page;
-  --web-action-target: Welcome.html;
-  cursor: pointer;
+.text_sub {
+  text-align: left;
+  font-size: 21px;
+  font-weight: bold;
+  color: rgba(38,153,251,1);
 }
-#n_10_bs {
-  fill: rgba(38,153,251,1);
+#loginForm {
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
-.n_10_bs {
-  overflow: visible;
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  transform: translate(0px, 0px) matrix(1,0,0,1,0,0) rotate(180deg);
-  transform-origin: center;
-  left: 0px;
-  top: 0px;
+.btn_submit {
+  background-color: rgba(38,153,251,1);
+  border-color: rgba(38,153,251,1);
 }
-#logo_1-1_bt {
-  position: absolute;
-  width: 152.973px;
-  height: 46.67px;
-  left: 89.514px;
-  top: 19.664px;
-  overflow: visible;
+.btn_outline {
+  background-color: transparent;
+  border-color: rgba(38,153,251,1);
+  font-weight: bold;
+  color: rgba(38,153,251,1);
 }
-#n____________NEXT____bc {
-  left: 62px;
-  top: 522px;
-  position: absolute;
-  overflow: visible;
-  width: 311px;
-  height: 93px;
-  line-height: 24px;
-  margin-top: -5px;
-  text-align: center;
-  font-family: Arial;
-  font-style: normal;
-  font-weight: normal;
+.card_global {
+  background-color: rgba(241,249,255,1);
+  border-color: rgba(241,249,255,1);
+}
+.card_download {
+  background-color: rgba(255,255,255,1);
+  border-color: rgba(241,249,255,1);
+  filter: drop-shadow(0px 30px 30px rgba(38, 153, 251, 0.102))
+}
+.btn-upload {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border-radius: 5px;
+    background: rgba(38,153,251,1);
+    font-family: sans-serif;
+    color: #fff;
+    text-align: center;
+}
+.fs_14 {
   font-size: 14px;
+  color: rgba(38,153,251,1);
+}
+.fs_20 {
+  font-size: 20px;
+  color: rgba(38,153,251,1);
+}
+.fs_48 {
+  font-size: 48px;
+  color: rgba(38,153,251,1);
+}
+.ico_circle {
+  font-size: 52px;
   color: rgba(38,153,251,1);
 }
 #n_588 {
@@ -1099,25 +813,6 @@ a { color: #00B7FF;}
   left: 48px;
   top: 0px;
 }
-#SKIP_bk {
-  left: 0px;
-  top: 0px;
-  position: absolute;
-  overflow: visible;
-  width: 34px;
-  white-space: nowrap;
-  --web-animation: fadein 0.3s ease-out;
-  --web-action-type: page;
-  --web-action-target: Gallary_page.html;
-  cursor: pointer;
-  text-align: left;
-  font-family: Arial;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  color: rgba(38,153,251,1);
-}
-
 #n_68_bm {
   fill: transparent;
 }
@@ -1140,18 +835,6 @@ a { color: #00B7FF;}
   left: 0px;
   top: 20px;
 }
-#Menu_bo {
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  left: 316px;
-  top: 35px;
-  overflow: visible;
-  --web-animation: fadein 0.3s ease-out;
-  --web-action-type: page;
-  --web-action-target: Menu_.html;
-  cursor: pointer;
-}
 #n_175_bp {
   fill: transparent;
 }
@@ -1162,47 +845,6 @@ a { color: #00B7FF;}
   height: 16px;
   left: 0px;
   top: 0px;
-}
-#Backward_arrow_br {
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  left: 0px;
-  top: 35px;
-  overflow: visible;
-  --web-animation: fadein 0.3s ease-out;
-  --web-action-type: page;
-  --web-action-target: Welcome.html;
-  cursor: pointer;
-}
-#n_10_bs {
-  fill: rgba(38,153,251,1);
-}
-.n_10_bs {
-  overflow: visible;
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  transform: translate(0px, 0px) matrix(1,0,0,1,0,0) rotate(180deg);
-  transform-origin: center;
-  left: 0px;
-  top: 0px;
-}
-#logo_1-1_bt {
-  position: absolute;
-  width: 152.973px;
-  height: 46.67px;
-  left: 89.514px;
-  top: 19.664px;
-  overflow: visible;
-}
-#guide_img1 {
-  position: absolute;
-  width: 332px;
-  height: 332px;
-  left: 40px;
-  top: 160px;
-  overflow: visible;
 }
 
 #Menu_cd {
@@ -1235,25 +877,4 @@ a { color: #00B7FF;}
   left: 0px;
   top: 1px;
   transform: matrix(1,0,0,1,0,0);
-}
-#Backward_arrow {
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  left: 0px;
-  top: 35px;
-  overflow: visible;
-}
-#n_10 {
-  fill: rgba(38,153,251,1);
-}
-.n_10 {
-  overflow: visible;
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  transform: translate(0px, 0px) matrix(1,0,0,1,0,0) rotate(180deg);
-  transform-origin: center;
-  left: 0px;
-  top: 0px;
 }

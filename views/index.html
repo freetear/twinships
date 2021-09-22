@@ -11,21 +11,13 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div id="container">
-      <img id="n_1468" src="images/n_1468.png" srcset="images/n_1468.png 1x, images/n_1468@2x.png 2x">
-      <div id="Next" class="Next">
-        <svg class="n_112"><rect id="n_112" rx="4" ry="4" x="0" y="0" width="332" height="53"></rect></svg>
+    <div class="container bg-image" style="background-image:url('images/n_1468.png'); height:100vh;">
+      <div class="row align-items-lg-center">
+        <img class="title_logo" src="images/logo_1.png" srcset="images/logo_1.png 1x, images/logo_1@2x.png 2x">
+        <div class="d-flex flex-column flex-sm-row position-absolute btn_agree">
+          <a class="btn btn-primary" href="/main">개인정보 및 위치정보 이용에 동의합니다.</a>
+        </div>
       </div>
-      <div id="btn_agree">
-        <span>개인정보 및 위치정보 이용에 동의합니다.</span>
-      </div>
-      <img id="logo_1" src="images/logo_1.png" srcset="images/logo_1.png 1x, images/logo_1@2x.png 2x">
     </div>
   </body>
-  <script>
-    const agree = document.querySelector('#btn_agree')
-    agree.addEventListener('click', e => {
-      location.href = '/main'
-    })
-  </script>
 </html>

@@ -1,66 +1,46 @@
 {% set pageVar = {title: 'TWINSHIPS - Login'} %}
 {% extends './layout/base.html' %}
 {% block content %}
-<div class="container">
-  <div id="n__1">
-    <span>사용법 알림 2</span>
-  </div>
-  <div id="Navigation_Bar_bl" class="Navigation_Bar">
-    <svg class="n_68_bm">
-      <rect id="n_68_bm" rx="0" ry="0" x="0" y="0" width="332" height="20"></rect>
-    </svg>
-    <svg class="n_69_bn">
-      <rect id="n_69_bn" rx="0" ry="0" x="0" y="0" width="332" height="48"></rect>
-    </svg>
-    <div onclick="openNav()" id="Menu_bo">
-      <svg class="n_175_bp">
-        <rect id="n_175_bp" rx="0" ry="0" x="0" y="0" width="16" height="16"></rect>
-      </svg>
-      <svg class="n_4_bq" viewBox="0 0 16 14">
-        <path id="n_4_bq" d="M 0 14 L 0 11.99935722351074 L 8 11.99935722351074 L 8 14 L 0 14 Z M 0 7.999871253967285 L 0 6.000128269195557 L 16 6.000128269195557 L 16 7.999871253967285 L 0 7.999871253967285 Z M 0 1.999742865562439 L 0 0 L 16 0 L 16 1.999742865562439 L 0 1.999742865562439 Z">
-        </path>
-      </svg>
+<main>
+  <div class="container px-4 px-md-3">
+    <div class="row align-items-lg-center">
+      <div class="col-md-12 text-center">
+        <h1 class="text_sub mb-3">사용법 알림 2</h1>
+      </div>
+      <div class="col-12 mx-auto">
+        <img class="img-fluid mb-3 mb-md-0" src="images/guide_img2.png">
+      </div>
+      <div class="col-md-12 mx-auto">
+        <p class="text_desc">안녕하세요 박장군 고객님, 도면제작 서비스에 <br/>
+        가입하신것을 환영합니다.<br/>
+        사용법을 안내해드리겠습니다. <br/>
+        아래 NEXT버튼을 눌러주세요.
+        </p>
+      </div>
+      <div class="col-md-12 pagenation">
+        <div class="col-6 skip">BACK</div>
+        <div id="Pagination" class="Pagination">
+          <svg class="n_9_bh">
+            <ellipse id="n_8_bg" rx="3" ry="3" cx="3" cy="3"></ellipse>
+          </svg>
+          <svg class="n_8_bg">
+            <ellipse id="n_9_bh" rx="3" ry="3" cx="3" cy="3"></ellipse>
+          </svg>
+          <svg class="n_10_bi">
+            <ellipse id="n_10_bi" rx="3" ry="3" cx="3" cy="3"></ellipse>
+          </svg>
+        </div>
+        <div class="col-6 next">NEXT</div>
+      </div>
     </div>
-    <div onclick="application.goToTargetView(event)" id="Backward_arrow_br" class="Backward_arrow">
-      <svg class="n_10_bs" viewBox="0 0 16 16">
-        <path id="n_10_bs" d="M 8 0 L 6.545454978942871 1.454545497894287 L 12.05194854736328 6.961039066314697 L 0 6.961039066314697 L 0 9.038961410522461 L 12.05194854736328 9.038961410522461 L 6.545454978942871 14.54545497894287 L 8 16 L 16 8 L 8 0 Z">
-        </path>
-      </svg>
-    </div>
-    <img id="logo_1-1_bt" src="images/logo_1-1_bt.png" srcset="images/logo_1-1_bt.png 1x, images/logo_1-1_bt@2x.png 2x">
   </div>
-  <div id="n____________NEXT____bc">
-    <span>안녕하세요 박장군 고객님, 도면제작 서비스에 가입하신것을 환영합니다.<br/>
-          사용법을 안내해드리겠습니다. <br/>
-          아래 NEXT버튼을 눌러주세요.  
-    </span>
-  </div>
-  <div id="n_584">
-    <div id="NEXT"><span>NEXT</span></div>
-    <div id="Pagination" class="Pagination">
-      <svg class="n_8_bg">
-        <ellipse id="n_9_bh" rx="3" ry="3" cx="3" cy="3">
-        </ellipse>
-      </svg>
-      <svg class="n_9_bh">
-        <ellipse id="n_8_bg" rx="3" ry="3" cx="3" cy="3">
-        </ellipse>
-      </svg>
-      <svg class="n_10_bi">
-        <ellipse id="n_10_bi" rx="3" ry="3" cx="3" cy="3">
-        </ellipse>
-      </svg>
-    </div>
-    <div id="SKIP"><span>BACK</span></div>
-  </div>
-  <img id="guide_img1" src="images/guide_img1.png" srcset="images/guide_img2.png 1x, images/guide_img2@2x.png 2x">
-  {% include './layout/layoutMenu.html' %}
-</div>
+</main>
+<footer></footer>
 {% endblock %}
 {% block  script %}
 <script>
-  const back = document.querySelector('#SKIP')
-  const next = document.querySelector('#NEXT')
+  const back = document.querySelector('.skip')
+  const next = document.querySelector('.next')
   
   back.addEventListener('click', e => location.href = '/guide1');
   next.addEventListener('click', e => location.href = '/guide3');

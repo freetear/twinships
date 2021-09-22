@@ -65,6 +65,22 @@ router.get('/guide3',(req, res, next) => {
   res.render('guide3');
 });
 
+router.get('/myinfo', (req, res, next) => {
+  res.render('myinfo')
+});
+
+router.get('/download', (req, res, next) => {
+  res.render('download')
+});
+
+router.get('/payment', (req, res, next) => {
+  res.render('payment')
+});
+
+router.get('/camera', (req, res, next) => {
+  res.render('camera')
+});
+
 router.get('/test',(req, res, next) => {
   res.render('test');
 });

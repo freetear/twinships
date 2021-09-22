@@ -1,41 +1,26 @@
 {% set pageVar = {title: 'TWINSHIPS - Login'} %}
 {% extends './layout/base.html' %}
 {% block content %}
-<div id="Login">
-  {% include './layout/layoutNav.html'%}
-	<div id="Next" class="Next">
-		<svg class="n_112">
-			<rect id="n_112" rx="4" ry="4" x="0" y="0" width="331" height="54"></rect>
-		</svg>
-		<div id="n_" class="_____">
-			<svg class="n_10" viewBox="0 0 17.579 17.579">
-				<path id="n_10" d="M 8.789333343505859 0 L 7.191273212432861 1.598060607910156 L 13.24107456207275 7.647861480712891 L 0 7.647861480712891 L 0 9.930805206298828 L 13.24107456207275 9.930805206298828 L 7.191273212432861 15.98060607910156 L 8.789333343505859 17.57866668701172 L 17.57866668701172 8.789333343505859 L 8.789333343505859 0 Z"></path>
-			</svg>
-		</div>
-	</div>
-	<div id="n__x">
-		<span>계정 로그인</span>
-	</div>
-  <form id="loginForm">
-    <div class="Continue" id="loginBtn">
-      <svg class="n_132">
-        <rect id="n_132" rx="15" ry="15" x="0" y="0" width="295" height="30"></rect>
-      </svg>
-      <div id="Text">
-        <span>로그인</span>
+<main>
+  <div class="container px-4 px-md-3">
+    <div class="row align-items-lg-center">
+      <div class="col-md-8 order-md-1 col-lg-7 text-center text-md-start">
+        <h1 class="text_sub mb-3">계정 로그인</h1>
       </div>
-    </div>
-    <div id="Inputs">
-      <div class="form-group mb-4">
-        <input type="email" name="email"  class="form-control form-control-lg" id="email" aria-describedby="emailHelp" placeholder="Enter Email">
+      <form class="col-md-8" id="loginForm">
+        <div class="form-group mb-4">
+          <input type="email" name="email"  class="form-control form-control-lg" id="email" aria-describedby="emailHelp" placeholder="Enter Email">
+        </div>
+          <div class="form-group">
+            <input type="password" name="password" id="password"  class="form-control form-control-lg" aria-describedby="emailHelp" placeholder="Enter Password">
+          </div>
+          <div class="alert alert-danger alert-dismissible fade mt-3" id="alert"></div>
+      </form>
+      <div class="d-flex flex-column flex-sm-row">
+        <button class="btn btn-lg btn-primary btn_submit" id="loginBtn">로그인</button>
       </div>
-      <div class="form-group">
-        <input type="password" name="password" id="password"  class="form-control form-control-lg" aria-describedby="emailHelp" placeholder="Enter Password">
-      </div>
-      <div class="alert alert-danger alert-dismissible fade mt-3" id="alert"></div>
-    </div>
-  </form>
-</div>
+  </div>
+</main>
 {% endblock %}
 
 {% block  script %}

@@ -1,31 +1,42 @@
-<nav id="Menu" class="sidenav">
+<nav class="container-xxl flex-wrap flex-md-nowrap">
+  <button class="btn_nav_back" type="button" onclick="application.goToTargetView(event);">
+    <span class="material-icons g-icon">arrow_back</span>
+  </button>
+  <div class="navbar-brand">
+    <img src="images/logo_1-1_bt.png" srcset="images/logo_1-1_bt.png 1x, images/logo_1-1_bt@2x.png 2x">    
+  </div>
+  <button class="btn_nav_menu" type="button" onclick="openNav();">
+    <span class="material-icons g-icon">subject</span>
+  </button>
+</nav>
+<div id="menu" class="sidenav">
   <ul class="list-group menu-group-text">
     <li class="list-group-item menu-text">
       <i class="material-icons">home</i>
       <a href="/main" class="menu-text text-decoration-none">HOME</a>
     </li>
-    <li href="#" class="list-group-item menu-text">
+    <a href="/guide1" class="list-group-item menu-text">
       <i class="material-icons">help_outline</i>
       <span class="menu-text">사용설명</span>
-    </li>
-    <li href="#" class="list-group-item menu-text">
+    </a>
+    <a href="/photo" class="list-group-item menu-text">
       <i class="material-icons">photo_library</i>
       <span class="menu-text">사진촬영</span>
-    </li>
-    <li href="#" class="list-group-item menu-text">
+    </a>
+    <a href="myinfo" class="list-group-item menu-text">
       <i class="material-icons">contact_mail</i>
       <span class="menu-text">내정보</span>
-    </li>
-    <li href="#" class="list-group-item menu-text">
+    </a>
+    <a href="#" class="list-group-item menu-text">
       <i class="material-icons">upload_file</i>
       <span class="menu-text">사진보내기</span>
-    </li>
-    <li href="#" class="list-group-item menu-text">
+    </a>
+    <a href="#" class="list-group-item menu-text">
       <i class="material-icons">payment</i>
       <span class="menu-text">결재하기</span>
-    </li>
+    </a>
   </ul>
-  <div class="profile">
+  <div class="navbar fixed-bottom navbar-light bg-light profile">
     <div id="Name">
       <div id="Text">
         <span>박장군</span>
@@ -45,25 +56,22 @@
         </svg>
       </div>
     </div>
-    <div id="Logout" class="Logout">
-      <svg class="n_570">
-        <rect id="n_570" rx="0" ry="0" x="0" y="0" width="18" height="18"></rect>
-      </svg>
+    <div class="menu_logout">
       <svg class="n_151" viewBox="0 0 15.356 17.579">
         <path id="n_151" d="M 1.818482637405396 1.818482637405396 L 1.818482637405396 15.7601842880249 L 10.50679016113281 15.7601842880249 L 10.50679016113281 17.57866668701172 L 0 17.57866668701172 L 0 0 L 10.5067892074585 0 L 10.5067892074585 1.818482637405396 L 1.818482637405396 1.818482637405396 Z M 9.900629043579102 14.54786109924316 L 8.486252784729004 13.1334867477417 L 11.7191104888916 9.900629043579102 L 4.243126392364502 9.900629043579102 L 4.243126392364502 7.880092144012451 L 11.92116355895996 7.880092144012451 L 8.486252784729004 4.647233963012695 L 9.900628089904785 3.232857942581177 L 15.35607624053955 8.68830680847168 L 9.900629043579102 14.54786109924316 Z">
         </path>
       </svg>
     </div>
   </div>
-</nav>
+</div>
 <script>
   function openNav() {
-    document.getElementById("Menu").style.width = "340px";
-    document.getElementById("Menu_bo").onclick = closeNav
+    document.getElementById("menu").style.width = "320px";
+    document.querySelector(".btn_nav_menu").setAttribute('onclick', 'closeNav()')
   }
 
   function closeNav() {
-    document.getElementById("Menu").style.width = "0";
-    document.getElementById("Menu_bo").onclick = openNav
+    document.getElementById("menu").style.width = "0";
+    document.querySelector(".btn_nav_menu").setAttribute('onclick', 'openNav()')
   }
 </script>

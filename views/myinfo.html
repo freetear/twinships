@@ -1,0 +1,102 @@
+{% set pageVar = {title: 'TWINSHIPS - Login'} %}
+{% extends './layout/base.html' %}
+{% block content %}
+<main>
+  <div class="container px-4 px-md-3">
+    <div class="row align-items-lg-center">
+      <div class="col-md-12">
+        <h1 class="text_sub mb-3">내 정보</h1>
+      </div>
+      <div class="col-md-12 mx-auto">
+        <div class="card card_global mt-3">
+          <div class="card-body">   
+            <div class="media d-flex">
+              <div class="align-self-center">
+                <span class="material-icons ico_circle">account_circle</span>
+              </div>
+              <div class="media-body text-right text_color_basic">
+                <div class="myinfo_name">박장군</div>
+                <div class="myinfo_address">부산해운대구</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12 mx-auto">
+        <div class="card card_global px-3 pb-3 mt-3">
+          <div class="card-content text_color_basic">   
+            <div class="row">
+              <div class="col-12 pt-2 pb-2 border-bottom-blue-grey border-bottom-lighten-5">
+                  <div class="d-flex bd-highlight mb-3">
+                    <span class="me-auto p-2 bd-highlight myinfo_name">완료됨</span>
+                    <span class="p-2 bd-highlight myinfo_address">+22 more</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <img src="images/n_258.png" alt="">
+                <div class="text-center mt-2">
+                  <button class="btn btn-sm btn-primary btn_submit mx-auto myinfo_address">SUCCESS</button>
+                </div>
+              </div>
+              <div class="col-6">
+                <img src="images/n_919.png" alt="">
+                <div class="text-center mt-2">
+                  <button class="btn btn-sm btn-primary btn_submit mx-auto myinfo_address">SUCCESS</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12 mx-auto">
+        <div class="card card_global px-3 pb-3 mt-3">
+          <div class="card-content text_color_basic">   
+            <div class="row">
+              <div class="col-12 pt-2 pb-2 border-bottom-blue-grey border-bottom-lighten-5">
+                  <div class="d-flex bd-highlight mb-3">
+                    <span class="me-auto p-2 bd-highlight myinfo_name">진행중</span>
+                    <span class="p-2 bd-highlight myinfo_address">+134 more</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center">
+              <div class="p-1 bd-highlight">
+                <img src="images/n_258.png" class="img-thumbnail" alt="">
+                <div class="text-center mt-2">
+                  <button class="btn btn-sm btn-primary btn_submit mx-auto myinfo_address">WORKING!</button>
+                </div>
+              </div>
+              <div class="p-1 bd-highlight">
+                <img src="images/n_919.png" class="img-thumbnail" alt="">
+                <div class="text-center mt-2">
+                  <button class="btn btn-sm btn-primary btn_submit mx-auto myinfo_address">WORKING!</button>
+                </div>
+              </div>
+              <div class="p-1 bd-highlight">
+                <img src="images/n_258.png" class="img-thumbnail" alt="">
+                <div class="text-center mt-2">
+                  <button class="btn btn-sm btn-primary btn_submit mx-auto myinfo_address">WORKING!</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<footer></footer>
+{% endblock %}
+{% block  script %}
+<script>
+  const back = document.querySelector('.skip')
+  const next = document.querySelector('.next')
+  
+  back.addEventListener('click', e => location.href = '/guide2');
+  next.addEventListener('click', e => location.href = '/guide3');
+</script>
+{% endblock %}
