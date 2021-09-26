@@ -905,10 +905,22 @@ a { color: #00B7FF;}
   position: absolute;
   width: 331px;
   height: 53px;
-  top: 700px;
+  top: 600px;
+  overflow: visible;
+}
+.upload_button {
+  position: absolute;
+  display: none;
+  width: 331px;
+  height: 53px;
+  top: 600px;
   overflow: visible;
 }
 .ico_camera {
   color: rgba(38,153,251,1);
   font-size: 48px;
+}
+.preview-box img{
+  width: 100%;
+  height: 400px;
 }
