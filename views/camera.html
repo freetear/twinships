@@ -7,24 +7,25 @@
       <div class="col-md-12 text-center">
         <h1 class="text_sub mb-3">사진촬영 페이지</h1>
       </div>
-      <div class="col-12 mx-auto d-flex justify-content-center position-relative mt-5">
-        <div class="play">
-          <svg class="play_circle">
-            <ellipse id="n_2" rx="92" ry="92" cx="92" cy="92"></ellipse>
-          </svg>
-          <i class="material-icons position-absolute top-50 start-50 translate-middle ico_camera">photo_camera</i>
+      <form id="form" action="/upload" method="post" enctype="multipart/form-data">
+        <div class="col-12 mx-auto d-flex justify-content-center position-relative mt-5">
+          <div class="play">
+            <svg class="play_circle">
+              <ellipse id="n_2" rx="92" ry="92" cx="92" cy="92"></ellipse>
+            </svg>
+            <i class="material-icons position-absolute top-50 start-50 translate-middle ico_camera">photo_camera</i>
+          </div>
+          <div class="preview-box"></div> 
         </div>
-        <div class="preview-box"></div> 
-      </div>
-      <div class="d-flex flex-column flex-sm-row">
-        <div class="photo_button">
-          <input type="file" id="input-file" name="input-file" accept="image/*" onchange={handleChange()} hidden/>
-          <label class="btn-upload" for="input-file" role="button">촬영하기</label>
-        </div>
-        <div class="upload_button">
-          <input type="file" id="input-file" name="input-file" accept="image/*" onchange={handleChange()} hidden/>
-          <label class="btn-upload" for="input-file" role="button">전송하기</label>
-        </div>
+        <div class="d-flex flex-column flex-sm-row">
+          <div class="photo_button">
+            <input type="file" id="input-file" name="input-file" accept="image/*" onchange={handleChange()} hidden/>
+            <label class="btn-upload" for="input-file" role="button">촬영하기</label>
+          </div>
+          <div class="upload_button">
+            <input type="submit" id="input-file" name="photo" class="btn-upload"/>
+          </div>
+        </form>
       </div>
     </div>
   </div>
@@ -33,14 +34,14 @@
 {% endblock %}
 {% block  script %}
 <script>
-  const handleChange = () => {
+const handleChange = () => {
   const fileUploader = document.querySelector('#input-file');
   const getFile = fileUploader.files
   if (getFile.length !== 0) {
     const uploadedFile = getFile[0];
     readFile(uploadedFile);
   }
-}
+};
 
 const readFile = (uploadedFile) => {
   if (uploadedFile) {
@@ -51,13 +52,27 @@ const readFile = (uploadedFile) => {
       const uploadBtn = document.querySelector('.upload_button');
       const photoBtn = document.querySelector('.photo_button');
       playIcon.style.display = 'none';
-      photoBtn.style.display = 'none';
+      //photoBtn.style.display = 'none';
       uploadBtn.style.display = 'block';
       parent.innerHTML = `<img class="preview-content" src=${reader.result} />`;
     };
     
     reader.readAsDataURL(uploadedFile);
   }
+};
+
+const uploadFile = (uploadFile) => {
+  const formData = new FormData();
+  formData.append('img', this.files[0]);
+  axios.post('/upload', formData)
+    .then((res) => {
+      document.getElementById('img-url').value = res.data.url;
+      document.getElementById('img-preview').src = res.data.originalUrl;
+      document.getElementById('img-preview').style.display = 'inline';
+    })
+    .catch((err) => {
+      console.error(err);
+    });
 };
 
 </script>

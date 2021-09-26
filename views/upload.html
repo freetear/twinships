@@ -1,0 +1,30 @@
+{% set pageVar = {title: 'TWINSHIPS - Download'} %}
+{% extends './layout/base.html' %}
+{% block content %}
+<main>
+  <div class="container px-4 px-md-3">
+    <div class="row align-items-lg-center">
+      <div class="col-md-12 text-center">
+        <h1 class="text_sub mb-3">업로드 완료</h1>
+      </div>
+      <div class="col-md-12 mx-auto mt-2">
+          <div class="d-flex flex-column flex-sm-row mt-5">
+            <img src="{{image}}" alt="">
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</main>
+<footer></footer>
+{% endblock %}
+{% block  script %}
+<script>
+  const back = document.querySelector('.skip')
+  const next = document.querySelector('.next')
+  
+  back.addEventListener('click', e => location.href = '/guide2');
+  next.addEventListener('click', e => location.href = '/guide3');
+</script>
+{% endblock %}
