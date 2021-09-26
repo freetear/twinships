@@ -878,3 +878,37 @@ a { color: #00B7FF;}
   top: 1px;
   transform: matrix(1,0,0,1,0,0);
 }
+.play {
+  position: relative;
+  width: 191px;
+  height: 184px;
+  overflow: visible;
+}
+#n_2 {
+  fill: transparent;
+  stroke: rgba(38,153,251,1);
+  stroke-width: 2px;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.play_circle {
+  position: absolute;
+  overflow: visible;
+  width: 184px;
+  height: 184px;
+  left: 0px;
+  top: 0px;
+}
+.photo_button {
+  position: absolute;
+  width: 331px;
+  height: 53px;
+  top: 700px;
+  overflow: visible;
+}
+.ico_camera {
+  color: rgba(38,153,251,1);
+  font-size: 48px;
+}
