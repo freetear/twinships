@@ -140,4 +140,25 @@ router.post('/login', (req, res, next) => {
   })
 });
 
+router.post('/signup', (req, res, next) => {
+  try {
+    firebase.auth().createUserWithEmailAndPassword(req.body.email, req.body.password)
+    .then( firebaseUser => { 
+      console.log('회원가입 완료')
+      console.log(firebaseUser)
+      res.send({statusCode: 200, message: 'success'})
+    })
+    .catch(err => { 
+      console.log(err)
+      res.status(err.status || 500).json({
+        statusCode: err.status || 500,
+        code: err.code,
+        message: err.message || 'unknown error'
+      })
+    })
+  } catch (error) {
+    console.log(error)
+  }
+})
+
 module.exports = router;
