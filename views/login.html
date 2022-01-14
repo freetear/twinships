@@ -42,7 +42,7 @@
         console.log('then')
         console.log(res.statusCode)
         if (res.data.statusCode == 200) {
-          window.location.href = '/guide'
+          window.location.href = '/main'
         } else {
           if (res.data.statusCode != 200) {
             document.getElementById('alert').innerHTML = res.data.message;
